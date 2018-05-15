@@ -1,0 +1,12 @@
+.Layout{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.MainStage {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;   
+}
