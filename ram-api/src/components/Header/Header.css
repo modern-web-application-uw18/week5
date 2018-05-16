@@ -16,3 +16,9 @@
 .Header nav {
     height: 100%;
 }
+
+.HeaderTitle {
+    color: #ff9800;
+    font-size: 25px;
+    margin: 0px;
+}

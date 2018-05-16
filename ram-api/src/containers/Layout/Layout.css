@@ -5,8 +5,3 @@
     align-items: center;
 }
 
-.MainStage {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;   
-}

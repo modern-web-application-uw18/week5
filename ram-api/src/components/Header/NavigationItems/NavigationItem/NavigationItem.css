@@ -11,6 +11,8 @@
     padding: 16px 10px;
     border-bottom: 4px solid transparent;
     text-decoration: none;
+    transition: border-bottom 1.83s;
+
 }
 
 .NavigationItem a:hover,
@@ -19,4 +21,5 @@
     background-color: #272727;
     border-bottom: 4px solid rgb(206, 24, 109);
     color: white;
+    transition: border-bottom 0.4s;
 }

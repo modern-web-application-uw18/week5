@@ -1,0 +1,27 @@
+.Card {
+    height: 100px;
+    width: 100px;
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+    grid-template-columns: 49% 50%;
+    grid-auto-rows: 49%;
+    grid-gap: 5px;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: left;
+    padding: 5px;
+    border: solid 1px #cecece;
+    background-color: beige;
+    transition: background-color  3s;
+    transition-timing-function: ease;
+}
+
+.Card:hover,
+.Card:active,
+.Card.active {
+    background-color: #d6d6d6;
+    transition: background-color  0.4s;
+    cursor: pointer;
+    transition-timing-function: ease;
+}

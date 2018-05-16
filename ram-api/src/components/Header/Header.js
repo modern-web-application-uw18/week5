@@ -8,7 +8,7 @@ class Header extends Component {
     render() {
         return (
             <header className="Header">
-                <h1 style={{color:"gray"}}>R&M API</h1>
+                <span className="HeaderTitle">R&M API</span>
                 <nav>
                     <NavigationItems />
                 </nav>
