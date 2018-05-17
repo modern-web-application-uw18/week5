@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Detail.css';
 import InfoPanel from './InfoPanel/InfoPanel'
+import { withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 
 class Detail extends Component {
@@ -23,10 +25,14 @@ class Detail extends Component {
     render() {
         return (
             <div className="Detail">
-                <InfoPanel  character={this.state.character} />
+                <InfoPanel  character={this.state.character} favAddRemoveHandler={this.props.favAddRemoveHandler} />
             </div>
         )
     }
 }
 
-export default Detail;
+Detail.propTypes = {
+    favAddRemoveHandler: PropTypes.func
+}
+
+export default withRouter(Detail);

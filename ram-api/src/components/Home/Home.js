@@ -5,11 +5,12 @@ import './Home.css';
 
 class Home extends Component {
 
+
     state = {
         characters: []
     }
 
-
+    
     sortCharactersAlph = () => {
         let characters = this.state.characters.sort(function (a, b) {
             if (a.name < b.name) return -1;

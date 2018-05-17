@@ -16,3 +16,21 @@
     display: block;
     margin: 10px;
 }
+
+.Star {
+    font-size: 40px;
+    text-align: right;
+    top: 0px;
+    right: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.Star:hover,
+.Star:active,
+.Star.active {
+    color: #e09900;
+
+    
+}

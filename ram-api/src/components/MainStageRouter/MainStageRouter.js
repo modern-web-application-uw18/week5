@@ -13,7 +13,12 @@ class MainStageRouter extends Component {
                     <Route exact path="/" render={() => {
                         return (<Home searchBoxValue={this.props.searchBoxValue} />)
                     }} />
-                    <Route exact path="/detail/:id" component={Detail} />
+
+                    <Route exact path="/detail/:id" render={() => {
+                        return (<Detail favAddRemoveHandler={this.props.favAddRemoveHandler} />)
+                    }} />
+
+
                     <Redirect exact from="/detail" to="/" />
                 </Switch>
             </div>
@@ -22,7 +27,8 @@ class MainStageRouter extends Component {
 }
 
 MainStageRouter.propTypes = {
-    searchBoxValue: PropTypes.string
+    searchBoxValue: PropTypes.string,
+    favAddRemoveHandler: PropTypes.func
 }
 
 export default MainStageRouter;
