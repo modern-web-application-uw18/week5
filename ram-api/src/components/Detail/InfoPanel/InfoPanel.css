@@ -1,0 +1,18 @@
+.InfoPanel {
+    height: 90%;
+    width: 300px;
+    top: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: auto;
+    color: #ffffff;
+    border-radius: 5%;
+    
+}
+
+.InfoPanelDetail {
+    font-size: 15px;
+    color: #6e6e6e94;
+    display: block;
+    margin: 10px;
+}

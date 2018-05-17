@@ -28,13 +28,19 @@ class Home extends Component {
     render() {
 
 
+        let filteredCards = this.state.characters.filter(character => {
+            return character.name.toLowerCase().indexOf(this.props.searchBoxValue.toLowerCase()) !== -1;
+        });
+
         return (
             <div className="Home">
                 {
-                    this.state.characters.map(character => {
-                        return <Card key={character.id} name={character.name}/>;
+                    filteredCards.map(character => {
+                       
+                        return <Card key={character.id} character={character}/>;
                     })
                 }
+
             </div>
         )
 
