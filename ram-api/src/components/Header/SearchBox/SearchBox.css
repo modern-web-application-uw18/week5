@@ -14,3 +14,12 @@
     opacity: 1;
     transition: opacity 0.4s;
 }
+
+
+@media (max-width: 668px) {
+    .input-group {
+        width: 80px;
+    }
+
+
+}
