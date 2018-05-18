@@ -18,6 +18,10 @@
         opacity: 0.7;
     }
 
+    .Layout {
+        min-width: 375px;
+    }
+
 }
 
 

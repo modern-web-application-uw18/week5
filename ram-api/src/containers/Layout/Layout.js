@@ -12,7 +12,9 @@ class Layout extends Component {
         this.state = {
             searchBoxValue: '',
             favoriteIds: JSON.parse(localStorage.getItem("favoriteIds")) || [],
-            characters: []
+            characters: [],
+            pageCount: 0,
+            characterCount: 0
         }
 
     }
@@ -51,20 +53,24 @@ class Layout extends Component {
         })
         initalJsonPullPromise.then(resolveObj => {
 
+            let localPageCount = resolveObj.pageCount;
+
             let promiseArr = [];
-            while (resolveObj.pageCount >= 1) {
+            while (localPageCount >= 1) {
                 promiseArr.push( //new promise/fetch for each page
-                    fetch('https://rickandmortyapi.com/api/character/?page=' + resolveObj.pageCount)
+                    fetch('https://rickandmortyapi.com/api/character/?page=' + localPageCount)
                         .then(response => response.json())
                         .then(data => data.results.forEach(character => allCharacters.push(character)))
                 );
-                resolveObj.pageCount--;
+                localPageCount--;
             }
             Promise.all(promiseArr)
                 .then(allCombined => { //pushing individual characters into the allCharacters array above to avoid nested for loops as allCombined is array of arrays...
                     this.setState(prevState => {
                         return {
-                            characters: allCharacters
+                            characters: allCharacters,
+                            pageCount: resolveObj.pageCount,
+                            characterCount: resolveObj.characterCount
                         }
                     })
                     this.sortCharactersAlph();
@@ -105,12 +111,15 @@ class Layout extends Component {
 
 
     render() {
-
-
         return (
             <div className="Layout">
                 <Header searchHandler={this.searchHandler} />
-                <MainStageRouter searchBoxValue={this.state.searchBoxValue} favAddRemoveHandler={this.favAddRemoveHandler} characters={this.state.characters} />
+                <MainStageRouter
+                    searchBoxValue={this.state.searchBoxValue}
+                    favAddRemoveHandler={this.favAddRemoveHandler}
+                    characters={this.state.characters}
+                    pageCount={this.state.pageCount}
+                    characterCount={this.state.characterCount} />
             </div>
         )
     }

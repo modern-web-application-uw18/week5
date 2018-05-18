@@ -7,6 +7,9 @@ import MdStar from 'react-icons/lib/md/star';
 const card = (props)=> {
 
 
+    
+
+
         return (
             <NavLink to={'/detail/' + props.character.id} exact={true}>
                 <div className="Card" style={{ backgroundImage: `url(${props.character.image})` }}>

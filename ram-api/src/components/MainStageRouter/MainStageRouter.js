@@ -12,7 +12,11 @@ class MainStageRouter extends Component {
             <div className="MainStageRouter">
                 <Switch>
                     <Route exact path="/" render={() => {
-                        return (<Home searchBoxValue={this.props.searchBoxValue} characters={this.props.characters} />)
+                        return (<Home
+                            searchBoxValue={this.props.searchBoxValue}
+                            characters={this.props.characters}
+                            pageCount={this.props.pageCount}
+                            characterCount={this.props.characterCount} />)
                     }} />
 
                     <Route exact path="/detail/:id" render={() => {
@@ -22,7 +26,7 @@ class MainStageRouter extends Component {
                     <Route exact path="/favs" render={() => {
                         return (<Favorites characters={this.props.characters} />)
                     }} />
- 
+
 
 
                     <Redirect exact from="/detail" to="/" />
@@ -35,7 +39,9 @@ class MainStageRouter extends Component {
 MainStageRouter.propTypes = {
     searchBoxValue: PropTypes.string,
     favAddRemoveHandler: PropTypes.func,
-    characters: PropTypes.array
+    characters: PropTypes.array,
+    pageCount: PropTypes.number,
+    characterCount: PropTypes.number
 }
 
 export default MainStageRouter;

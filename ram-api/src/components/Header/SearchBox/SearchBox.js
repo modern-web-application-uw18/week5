@@ -18,6 +18,12 @@ class SearchBox extends Component {
     }
 
 
+    //reset search box to '' when unmounting
+    componentWillUnmount(){
+        this.props.searchHandler('');
+    }
+
+
     render() {
 
         return (
