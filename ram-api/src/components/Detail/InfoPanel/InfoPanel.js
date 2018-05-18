@@ -11,11 +11,14 @@ import MdStar from 'react-icons/lib/md/star';
 class InfoPanel extends Component {
 
     state = {
-        clicked: false
+        clicked: JSON.parse(localStorage.getItem("favoriteIds")).indexOf(this.props.character.id) !== -1 ? true : false
     }
 
 
-    starHandler = ()=> {
+
+
+
+    starHandler = () => {
         this.props.favAddRemoveHandler(this.props.character.id);
         let clicked = !this.state.clicked;
         this.setState(prevState => {
@@ -26,13 +29,31 @@ class InfoPanel extends Component {
 
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        let storageClicked = JSON.parse(localStorage.getItem("favoriteIds")).indexOf(this.props.character.id) !== -1 ? true : false;
+        if (prevState.clicked !== storageClicked) {
+            this.setState((prevState) => {
+                return {
+                    clicked: storageClicked
+                }
+            })
+        }
+    }
+
 
     render() {
+
+
 
         return (
             <div className="InfoPanel" >
                 <img src={this.props.character.image} style={{ borderRadius: '5%' }} alt={this.props.character.name} />
-                <div className="Star" onClick={this.starHandler}>{this.state.clicked ? <MdStar style={{color:'#e09900'}}/> : <MdStarBorder />}</div>
+
+                {this.state.clicked ?
+                    <div className="Star" onClick={this.starHandler}><MdStar style={{ color: '#e09900' }} /> </div>
+                    :
+                    <div className="Star" onClick={this.starHandler}><MdStarBorder /> </div>}
+
                 <br />
                 <br />
                 <h3><span className="label label-danger">{this.props.character.name}</span></h3>

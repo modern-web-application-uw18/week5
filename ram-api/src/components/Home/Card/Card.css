@@ -33,6 +33,16 @@
     background-color: black
 }
 
+
+.CardStar {
+    font-size: 25px;
+    text-align: right;
+    position: absolute;
+    right: 5px;
+    z-index: 200;
+    color: #e09900;
+}
+
 .Card:hover,
 .Card:active,
 .Card.active {
