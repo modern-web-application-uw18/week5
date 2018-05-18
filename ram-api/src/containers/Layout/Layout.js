@@ -7,8 +7,8 @@ class Layout extends Component {
 
     constructor(props) {
         super(props);
-        
-       
+
+
         this.state = {
             searchBoxValue: '',
             favoriteIds: JSON.parse(localStorage.getItem("favoriteIds")) || [],
@@ -34,21 +34,31 @@ class Layout extends Component {
     }
 
     componentDidMount() {
+
+
+
+
+
+
         let allCharacters = [];
         let initalJsonPullPromise = new Promise((resolve, reject) => {   //first load the "pages" value from the info object of the character API point
             fetch('https://rickandmortyapi.com/api/character/')
                 .then(response => response.json())
-                .then(data => resolve(data.info.pages))                  //resolve the promise with the actual page count
+                .then(data => resolve({
+                    pageCount: data.info.pages,
+                    characterCount: data.info.count
+                }))                  //resolve the promise with the actual page count and character count
         })
-        initalJsonPullPromise.then(pageCount => {
+        initalJsonPullPromise.then(resolveObj => {
+
             let promiseArr = [];
-            while (pageCount >= 1) {
+            while (resolveObj.pageCount >= 1) {
                 promiseArr.push( //new promise/fetch for each page
-                    fetch('https://rickandmortyapi.com/api/character/?page=' + pageCount)
+                    fetch('https://rickandmortyapi.com/api/character/?page=' + resolveObj.pageCount)
                         .then(response => response.json())
                         .then(data => data.results.forEach(character => allCharacters.push(character)))
                 );
-                pageCount--;
+                resolveObj.pageCount--;
             }
             Promise.all(promiseArr)
                 .then(allCombined => { //pushing individual characters into the allCharacters array above to avoid nested for loops as allCombined is array of arrays...
@@ -64,7 +74,7 @@ class Layout extends Component {
 
     }
 
-    
+
 
     searchHandler = (searchBoxValue) => {
         this.setState((prevState) => {
@@ -82,8 +92,8 @@ class Layout extends Component {
 
         this.setState(prevState => {
 
-            localStorage.setItem('favoriteIds',JSON.stringify(prevFavoriteIdsArr));
-            
+            localStorage.setItem('favoriteIds', JSON.stringify(prevFavoriteIdsArr));
+
             return {
                 favoriteIds: prevFavoriteIdsArr
             }
@@ -100,7 +110,7 @@ class Layout extends Component {
         return (
             <div className="Layout">
                 <Header searchHandler={this.searchHandler} />
-                <MainStageRouter searchBoxValue={this.state.searchBoxValue} favAddRemoveHandler={this.favAddRemoveHandler} characters={this.state.characters}/>
+                <MainStageRouter searchBoxValue={this.state.searchBoxValue} favAddRemoveHandler={this.favAddRemoveHandler} characters={this.state.characters} />
             </div>
         )
     }

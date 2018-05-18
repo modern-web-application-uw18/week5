@@ -6,6 +6,7 @@ import Card from '../Home/Card/Card';
 class Favorites extends Component {
 
 
+       
         state = {
                 filteredCards: this.props.characters.filter(character => {
                         return character ? JSON.parse(localStorage.getItem("favoriteIds")).indexOf(character.id) !== -1 : null;
@@ -14,8 +15,11 @@ class Favorites extends Component {
 
 
 
-        //first load update if there are no filtered cards in the state
+ 
+        //as the characters (ajax call in layout) may have not made it down to favs before favs page finishes rendering
+        //,refresh the state on update
         componentDidUpdate(prevProps, prevState) {
+                
                 if (!prevState.filteredCards.length && JSON.parse(localStorage.getItem("favoriteIds")).length) {
                         let filteredCards = this.props.characters.filter(character => {
                                 return character ? JSON.parse(localStorage.getItem("favoriteIds")).indexOf(character.id) !== -1 : null;
@@ -32,6 +36,7 @@ class Favorites extends Component {
 
 
         render() {
+
 
                 return (
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './Card/Card';
 import './Home.css';
 import PropTypes from 'prop-types';
+import Paginator from './Paginator/Paginator';
 
 
 const home = (props) => {
@@ -11,12 +12,19 @@ const home = (props) => {
     });
 
     return (
-        <div className="Home">
-            {
-                filteredCards.map(character => {
-                    return <Card key={character.id} character={character} />;
-                })
-            }
+        <div style={{textAlign:"center",opacity:0.5}}>
+
+            <Paginator />
+
+
+            <div className="Home">
+
+                {
+                    filteredCards.map((character, idx) => {
+                        return idx >= 0 && idx <= 19 ? <Card key={character.id} character={character} /> : null;
+                    })
+                }
+            </div>
         </div>
     )
 }
