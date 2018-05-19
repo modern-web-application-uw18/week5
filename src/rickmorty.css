@@ -1,0 +1,45 @@
+#episodes {
+	 float: left;
+	 width: 30%;
+	 margin: 20px;
+	 padding: 5px;
+	 border: 2px #000000 solid;
+	 border-radius: 5px;
+	 }
+
+#characters{
+	float: left;
+	width: 30%;
+	margin: 20px;
+	 padding: 5px;
+	 border: 2px #000000 solid;
+	 border-radius: 5px;
+	}
+	
+#epcard{
+	margin: 5px;
+	 padding: 5px;
+	 border: 2px #000000 solid;
+	 border-radius: 5px;
+}
+	
+#charcard{
+	margin: 5px;
+	 padding: 5px;
+	 border: 2px #000000 solid;
+	 border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    #episodes {
+        width: 80%;
+    }
+	#characters {
+        width: 80%;
+    }
+}
+
+ul {
+	width: 90%;
+	list-style-type: none;
+}
