@@ -1,0 +1,11 @@
+.Paginator {
+
+}
+
+.pagination>li>a, .pagination>li>span {
+    background-color: #000000;
+    color: #dedede;
+    cursor: pointer;
+    width: 50px;
+}
+

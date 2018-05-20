@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InfoPanel /> Should render InfoPanel 1`] = `
+<InfoPanel
+  character={
+    Object {
+      "created": "2017-11-04T19:09:56.428Z",
+      "episode": Array [
+        "https://rickandmortyapi.com/api/episode/6",
+        "https://rickandmortyapi.com/api/episode/7",
+        "https://rickandmortyapi.com/api/episode/8",
+        "https://rickandmortyapi.com/api/episode/9",
+        "https://rickandmortyapi.com/api/episode/10",
+        "https://rickandmortyapi.com/api/episode/11",
+        "https://rickandmortyapi.com/api/episode/12",
+        "https://rickandmortyapi.com/api/episode/14",
+        "https://rickandmortyapi.com/api/episode/15",
+        "https://rickandmortyapi.com/api/episode/16",
+        "https://rickandmortyapi.com/api/episode/17",
+        "https://rickandmortyapi.com/api/episode/18",
+        "https://rickandmortyapi.com/api/episode/19",
+        "https://rickandmortyapi.com/api/episode/20",
+        "https://rickandmortyapi.com/api/episode/21",
+        "https://rickandmortyapi.com/api/episode/22",
+        "https://rickandmortyapi.com/api/episode/23",
+        "https://rickandmortyapi.com/api/episode/24",
+        "https://rickandmortyapi.com/api/episode/25",
+        "https://rickandmortyapi.com/api/episode/26",
+        "https://rickandmortyapi.com/api/episode/27",
+        "https://rickandmortyapi.com/api/episode/29",
+        "https://rickandmortyapi.com/api/episode/30",
+        "https://rickandmortyapi.com/api/episode/31",
+      ],
+      "gender": "Female",
+      "id": 3,
+      "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+      "location": Object {
+        "name": "Earth (Replacement Dimension)",
+        "url": "https://rickandmortyapi.com/api/location/20",
+      },
+      "name": "Summer Smith",
+      "origin": Object {
+        "name": "Earth (Replacement Dimension)",
+        "url": "https://rickandmortyapi.com/api/location/20",
+      },
+      "species": "Human",
+      "status": "Alive",
+      "type": "",
+      "url": "https://rickandmortyapi.com/api/character/3",
+    }
+  }
+>
+  <div
+    className="InfoPanel"
+  >
+    <img
+      alt="Summer Smith"
+      src="https://rickandmortyapi.com/api/character/avatar/3.jpeg"
+      style={
+        Object {
+          "borderRadius": "5%",
+        }
+      }
+    />
+    <div
+      className="Star"
+      onClick={[Function]}
+    >
+      <MdStarBorder>
+        <IconBase
+          viewBox="0 0 40 40"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m20 25.7l6.3 3.8-1.7-7.2 5.6-4.8-7.4-0.6-2.8-6.7-2.8 6.7-7.4 0.6 5.6 4.8-1.6 7.2z m16.6-10.3l-9 7.9 2.7 11.7-10.3-6.2-10.3 6.2 2.7-11.7-9-7.9 11.9-1 4.7-11 4.7 11z"
+              />
+            </g>
+          </svg>
+        </IconBase>
+      </MdStarBorder>
+       
+    </div>
+    <br />
+    <br />
+    <h3>
+      <span
+        className="label label-danger"
+      >
+        Summer Smith
+      </span>
+    </h3>
+    <br />
+    <span
+      className="InfoPanelDetail"
+    >
+      <MdAccessibility
+        size={40}
+      >
+        <IconBase
+          size={40}
+          viewBox="0 0 40 40"
+        >
+          <svg
+            fill="currentColor"
+            height={40}
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width={40}
+          >
+            <g>
+              <path
+                d="m35 15h-10v21.6h-3.4v-10h-3.2v10h-3.4v-21.6h-10v-3.4h30v3.4z m-15-11.6c1.8 0 3.4 1.4 3.4 3.2s-1.6 3.4-3.4 3.4-3.4-1.6-3.4-3.4 1.6-3.2 3.4-3.2z"
+              />
+            </g>
+          </svg>
+        </IconBase>
+      </MdAccessibility>
+       
+      Female
+    </span>
+    <span
+      className="InfoPanelDetail"
+    >
+      <MdAssignmentInd
+        size={40}
+      >
+        <IconBase
+          size={40}
+          viewBox="0 0 40 40"
+        >
+          <svg
+            fill="currentColor"
+            height={40}
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width={40}
+          >
+            <g>
+              <path
+                d="m30 31.6v-2.3c0-3.4-6.6-5.2-10-5.2s-10 1.8-10 5.2v2.3h20z m-10-20c-2.7 0-5 2.3-5 5s2.3 5 5 5 5-2.2 5-5-2.3-5-5-5z m0-6.6c-0.9 0-1.6 0.7-1.6 1.6s0.7 1.8 1.6 1.8 1.6-0.8 1.6-1.8-0.7-1.6-1.6-1.6z m11.6 0c1.8 0 3.4 1.6 3.4 3.4v23.2c0 1.8-1.6 3.4-3.4 3.4h-23.2c-1.8 0-3.4-1.6-3.4-3.4v-23.2c0-1.8 1.6-3.4 3.4-3.4h6.9c0.7-2 2.5-3.4 4.7-3.4s4 1.4 4.7 3.4h6.9z"
+              />
+            </g>
+          </svg>
+        </IconBase>
+      </MdAssignmentInd>
+       
+      Alive
+    </span>
+    <span
+      className="InfoPanelDetail"
+    >
+      <MdBugReport
+        size={40}
+      >
+        <IconBase
+          size={40}
+          viewBox="0 0 40 40"
+        >
+          <svg
+            fill="currentColor"
+            height={40}
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width={40}
+          >
+            <g>
+              <path
+                d="m23.4 20v-3.4h-6.8v3.4h6.8z m0 6.6v-3.2h-6.8v3.2h6.8z m10-13.2v3.2h-3.6c0.1 0.6 0.2 1.2 0.2 1.8v1.6h3.4v3.4h-3.4v1.6c0 0.5-0.1 1.1-0.2 1.6h3.6v3.4h-4.7c-1.7 3-5 5-8.7 5s-7-2-8.7-5h-4.7v-3.4h3.6c-0.1-0.5-0.2-1.1-0.2-1.6v-1.6h-3.4v-3.4h3.4v-1.6c0-0.6 0.1-1.2 0.2-1.8h-3.6v-3.2h4.7c0.8-1.4 1.8-2.5 3.1-3.3l-2.8-2.8 2.4-2.3 3.7 3.6c0.7-0.2 1.5-0.2 2.3-0.2s1.6 0 2.3 0.2l3.7-3.6 2.4 2.3-2.8 2.8c1.3 0.8 2.3 1.9 3.1 3.3h4.7z"
+              />
+            </g>
+          </svg>
+        </IconBase>
+      </MdBugReport>
+       
+      Human
+    </span>
+    <span
+      className="InfoPanelDetail"
+    >
+      <MdLocationOn
+        size={40}
+      >
+        <IconBase
+          size={40}
+          viewBox="0 0 40 40"
+        >
+          <svg
+            fill="currentColor"
+            height={40}
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width={40}
+          >
+            <g>
+              <path
+                d="m20 19.1q1.7 0 2.9-1.2t1.2-2.9-1.2-2.9-2.9-1.2-2.9 1.2-1.2 2.9 1.2 2.9 2.9 1.2z m0-15.7q4.8 0 8.2 3.4t3.4 8.2q0 2.4-1.2 5.5t-2.9 5.9-3.4 5.1-2.8 3.8l-1.3 1.3q-0.5-0.5-1.2-1.4t-2.9-3.6-3.5-5.2-2.8-5.8-1.2-5.6q0-4.8 3.4-8.2t8.2-3.4z"
+              />
+            </g>
+          </svg>
+        </IconBase>
+      </MdLocationOn>
+      Earth (Replacement Dimension)
+    </span>
+  </div>
+</InfoPanel>
+`;

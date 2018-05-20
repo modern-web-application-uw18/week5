@@ -1,0 +1,71 @@
+.Card {
+    height: 200px;
+    width: 200px;
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+    grid-template-columns: 49% 50%;
+    grid-auto-rows: 49%;
+    grid-gap: 5px;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: left;
+    padding: 5px;
+    border: solid 1px #cecece;
+    background-color: beige;
+    transition: opacity  3s;
+    transition-timing-function: ease;
+    background-position: 50% 50%;
+    background-size: cover;
+    opacity: 0.4;
+    position: relative;
+    
+}
+
+.Name {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0px;
+    font-size: 15px;
+    opacity: 0.7;
+    color: #ffffff;
+    background-color: black
+}
+
+
+.CardStar {
+    font-size: 25px;
+    text-align: right;
+    position: absolute;
+    right: 5px;
+    z-index: 200;
+    color: #e09900;
+}
+
+.Card:hover,
+.Card:active,
+.Card.active {
+    background-color: #d6d6d6;
+    transition: opacity  0.4s;
+    cursor: pointer;
+    transition-timing-function: ease;
+    opacity: 1;
+    
+}
+
+
+@media (max-width: 668px) {
+    .Card {
+        height: 100px;
+        width: 100px;
+        margin: 2px;
+        opacity: 1;
+    }
+
+    .Name {
+        opacity: 0.7;
+        font-size: 10px;
+    }
+
+}

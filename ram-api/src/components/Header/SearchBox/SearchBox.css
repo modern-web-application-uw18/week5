@@ -1,0 +1,25 @@
+.SearchBox {
+    
+}
+
+.input-group {
+    width: 220px;
+    opacity: .6;
+    transition: opacity 2.8s;
+}
+
+.input-group:hover,
+.input-group:active,
+.input-group.active {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
+
+@media (max-width: 668px) {
+    .input-group {
+        width: 80px;
+    }
+
+
+}
