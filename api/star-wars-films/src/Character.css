@@ -1,0 +1,52 @@
+.Character {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+
+.CharacterDetails {
+  font-size: 1em;
+  font-color: red;
+}
+
+.CharacterTrivia {
+    list-style-type: none;
+    font-size: .5em;
+    color: green;
+    text-align: center;
+
+  }
+
+
+.Image {
+  max-width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+  overflow: hidden; 
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: grey;
+    text-decoration: none;
+  }
+  
+  
+  /* mouse over link */
+  a:hover {
+    color: blueviolet;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: purple;
+    text-decoration: none;
+  }

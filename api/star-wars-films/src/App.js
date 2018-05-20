@@ -1,53 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Character from './Character.js';
 
-const About = () => <p>This is a Star Wars film app</p>;
+const About = () => <p>Explore Star Wars Characters</p>;
 
-class FilmDetail extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      film: {}
-    };
-  }
-  componentDidMount() {
-    const filmID = this.props.match.params.filmID;
-    fetch('https://swapi.co/api/films/${filmId}/')
-      .then(response => response.json())
-      .then(data => {
-        this.setState((prevState, props) => {
-          return { film: data };
-        });
-      });
-  }
-
-  render() 
-    const { title, opening_crawl } = this.state.film;
-return (
-  <div>
-    <h2>{title}</h2>
-    <p>{opening_crawl}</p>
-  </div>
-)
-}
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      films: []
+      people: []
     };
   }
 
 
   componentDidMount() {
-    fetch('https://swapi.co/api/films')
+    fetch('https://swapi.co/api/people')
       .then(response => response.json())
       .then(data => {
         this.setState((prevState, props) => {
           return {
-            films: data.results
+            people: data.results
           };
         });
       })
@@ -56,13 +30,17 @@ class App extends Component {
 
 
   render() {
-    return (
+  return (
       <div className="App">
-        {this.state.films.map((film, idx) => <p key={idx}>{film.title}</p>)}
+        <div className='AppCharacter'>
+        {/* {this.state.people.map((person, idx) => <p key={idx}>{person.name}</p>)} */}
+        {this.state.people.map((person, idx) => <Character person={person} key={idx} />)}
+        </div>
         <Router>
           <div>
-            <Route path="/about" component={About} />
-            <Route path="films/:filmID" component={FilmDetail} />
+          <Route path="/app" component={App} /> 
+          <Route path="/about" component={About} />
+          <Route path="/character" component={Character} />
           </div>
         </Router>
       </div>
