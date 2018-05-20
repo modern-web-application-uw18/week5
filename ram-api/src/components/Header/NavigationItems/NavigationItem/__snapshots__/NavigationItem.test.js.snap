@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationItem /> Should render NavigationItem 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "nf7yv9",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "nf7yv9",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <navigationItem
+      link="/detail"
+    >
+      <li
+        className="NavigationItem"
+      >
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/detail"
+        >
+          <Route
+            path="/detail"
+          >
+            <Link
+              aria-current={false}
+              replace={false}
+              to="/detail"
+            >
+              <a
+                aria-current={false}
+                href="/detail"
+                onClick={[Function]}
+              />
+            </Link>
+          </Route>
+        </NavLink>
+      </li>
+    </navigationItem>
+  </Router>
+</MemoryRouter>
+`;

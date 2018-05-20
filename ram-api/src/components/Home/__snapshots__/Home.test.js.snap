@@ -1,0 +1,2178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> Should render Home 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "c96kat",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "c96kat",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Home
+      characters={
+        Array [
+          Object {
+            "created": "2017-11-04T18:48:46.250Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/1",
+              "https://rickandmortyapi.com/api/episode/2",
+              "https://rickandmortyapi.com/api/episode/3",
+              "https://rickandmortyapi.com/api/episode/4",
+              "https://rickandmortyapi.com/api/episode/5",
+              "https://rickandmortyapi.com/api/episode/6",
+              "https://rickandmortyapi.com/api/episode/7",
+              "https://rickandmortyapi.com/api/episode/8",
+              "https://rickandmortyapi.com/api/episode/9",
+              "https://rickandmortyapi.com/api/episode/10",
+              "https://rickandmortyapi.com/api/episode/11",
+              "https://rickandmortyapi.com/api/episode/12",
+              "https://rickandmortyapi.com/api/episode/13",
+              "https://rickandmortyapi.com/api/episode/14",
+              "https://rickandmortyapi.com/api/episode/15",
+              "https://rickandmortyapi.com/api/episode/16",
+              "https://rickandmortyapi.com/api/episode/17",
+              "https://rickandmortyapi.com/api/episode/18",
+              "https://rickandmortyapi.com/api/episode/19",
+              "https://rickandmortyapi.com/api/episode/20",
+              "https://rickandmortyapi.com/api/episode/21",
+              "https://rickandmortyapi.com/api/episode/22",
+              "https://rickandmortyapi.com/api/episode/23",
+              "https://rickandmortyapi.com/api/episode/24",
+              "https://rickandmortyapi.com/api/episode/25",
+              "https://rickandmortyapi.com/api/episode/26",
+              "https://rickandmortyapi.com/api/episode/27",
+              "https://rickandmortyapi.com/api/episode/28",
+              "https://rickandmortyapi.com/api/episode/29",
+              "https://rickandmortyapi.com/api/episode/30",
+              "https://rickandmortyapi.com/api/episode/31",
+            ],
+            "gender": "Male",
+            "id": 1,
+            "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+            "location": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "name": "Rick Sanchez",
+            "origin": Object {
+              "name": "Earth (C-137)",
+              "url": "https://rickandmortyapi.com/api/location/1",
+            },
+            "species": "Human",
+            "status": "Alive",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/1",
+          },
+          Object {
+            "created": "2017-11-04T18:50:21.651Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/1",
+              "https://rickandmortyapi.com/api/episode/2",
+              "https://rickandmortyapi.com/api/episode/3",
+              "https://rickandmortyapi.com/api/episode/4",
+              "https://rickandmortyapi.com/api/episode/5",
+              "https://rickandmortyapi.com/api/episode/6",
+              "https://rickandmortyapi.com/api/episode/7",
+              "https://rickandmortyapi.com/api/episode/8",
+              "https://rickandmortyapi.com/api/episode/9",
+              "https://rickandmortyapi.com/api/episode/10",
+              "https://rickandmortyapi.com/api/episode/11",
+              "https://rickandmortyapi.com/api/episode/12",
+              "https://rickandmortyapi.com/api/episode/13",
+              "https://rickandmortyapi.com/api/episode/14",
+              "https://rickandmortyapi.com/api/episode/15",
+              "https://rickandmortyapi.com/api/episode/16",
+              "https://rickandmortyapi.com/api/episode/17",
+              "https://rickandmortyapi.com/api/episode/18",
+              "https://rickandmortyapi.com/api/episode/19",
+              "https://rickandmortyapi.com/api/episode/20",
+              "https://rickandmortyapi.com/api/episode/21",
+              "https://rickandmortyapi.com/api/episode/22",
+              "https://rickandmortyapi.com/api/episode/23",
+              "https://rickandmortyapi.com/api/episode/24",
+              "https://rickandmortyapi.com/api/episode/25",
+              "https://rickandmortyapi.com/api/episode/26",
+              "https://rickandmortyapi.com/api/episode/27",
+              "https://rickandmortyapi.com/api/episode/28",
+              "https://rickandmortyapi.com/api/episode/29",
+              "https://rickandmortyapi.com/api/episode/30",
+              "https://rickandmortyapi.com/api/episode/31",
+            ],
+            "gender": "Male",
+            "id": 2,
+            "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+            "location": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "name": "Morty Smith",
+            "origin": Object {
+              "name": "Earth (C-137)",
+              "url": "https://rickandmortyapi.com/api/location/1",
+            },
+            "species": "Human",
+            "status": "Alive",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/2",
+          },
+          Object {
+            "created": "2017-11-04T19:09:56.428Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/6",
+              "https://rickandmortyapi.com/api/episode/7",
+              "https://rickandmortyapi.com/api/episode/8",
+              "https://rickandmortyapi.com/api/episode/9",
+              "https://rickandmortyapi.com/api/episode/10",
+              "https://rickandmortyapi.com/api/episode/11",
+              "https://rickandmortyapi.com/api/episode/12",
+              "https://rickandmortyapi.com/api/episode/14",
+              "https://rickandmortyapi.com/api/episode/15",
+              "https://rickandmortyapi.com/api/episode/16",
+              "https://rickandmortyapi.com/api/episode/17",
+              "https://rickandmortyapi.com/api/episode/18",
+              "https://rickandmortyapi.com/api/episode/19",
+              "https://rickandmortyapi.com/api/episode/20",
+              "https://rickandmortyapi.com/api/episode/21",
+              "https://rickandmortyapi.com/api/episode/22",
+              "https://rickandmortyapi.com/api/episode/23",
+              "https://rickandmortyapi.com/api/episode/24",
+              "https://rickandmortyapi.com/api/episode/25",
+              "https://rickandmortyapi.com/api/episode/26",
+              "https://rickandmortyapi.com/api/episode/27",
+              "https://rickandmortyapi.com/api/episode/29",
+              "https://rickandmortyapi.com/api/episode/30",
+              "https://rickandmortyapi.com/api/episode/31",
+            ],
+            "gender": "Female",
+            "id": 3,
+            "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+            "location": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "name": "Summer Smith",
+            "origin": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "species": "Human",
+            "status": "Alive",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/3",
+          },
+          Object {
+            "created": "2017-11-04T19:22:43.665Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/6",
+              "https://rickandmortyapi.com/api/episode/7",
+              "https://rickandmortyapi.com/api/episode/8",
+              "https://rickandmortyapi.com/api/episode/9",
+              "https://rickandmortyapi.com/api/episode/10",
+              "https://rickandmortyapi.com/api/episode/11",
+              "https://rickandmortyapi.com/api/episode/12",
+              "https://rickandmortyapi.com/api/episode/14",
+              "https://rickandmortyapi.com/api/episode/15",
+              "https://rickandmortyapi.com/api/episode/16",
+              "https://rickandmortyapi.com/api/episode/18",
+              "https://rickandmortyapi.com/api/episode/19",
+              "https://rickandmortyapi.com/api/episode/20",
+              "https://rickandmortyapi.com/api/episode/21",
+              "https://rickandmortyapi.com/api/episode/22",
+              "https://rickandmortyapi.com/api/episode/23",
+              "https://rickandmortyapi.com/api/episode/24",
+              "https://rickandmortyapi.com/api/episode/25",
+              "https://rickandmortyapi.com/api/episode/26",
+              "https://rickandmortyapi.com/api/episode/27",
+              "https://rickandmortyapi.com/api/episode/28",
+              "https://rickandmortyapi.com/api/episode/29",
+              "https://rickandmortyapi.com/api/episode/30",
+              "https://rickandmortyapi.com/api/episode/31",
+            ],
+            "gender": "Female",
+            "id": 4,
+            "image": "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
+            "location": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "name": "Beth Smith",
+            "origin": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "species": "Human",
+            "status": "Alive",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/4",
+          },
+          Object {
+            "created": "2017-11-04T19:26:56.301Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/6",
+              "https://rickandmortyapi.com/api/episode/7",
+              "https://rickandmortyapi.com/api/episode/8",
+              "https://rickandmortyapi.com/api/episode/9",
+              "https://rickandmortyapi.com/api/episode/10",
+              "https://rickandmortyapi.com/api/episode/11",
+              "https://rickandmortyapi.com/api/episode/12",
+              "https://rickandmortyapi.com/api/episode/13",
+              "https://rickandmortyapi.com/api/episode/14",
+              "https://rickandmortyapi.com/api/episode/15",
+              "https://rickandmortyapi.com/api/episode/16",
+              "https://rickandmortyapi.com/api/episode/18",
+              "https://rickandmortyapi.com/api/episode/19",
+              "https://rickandmortyapi.com/api/episode/20",
+              "https://rickandmortyapi.com/api/episode/21",
+              "https://rickandmortyapi.com/api/episode/22",
+              "https://rickandmortyapi.com/api/episode/23",
+              "https://rickandmortyapi.com/api/episode/26",
+              "https://rickandmortyapi.com/api/episode/29",
+              "https://rickandmortyapi.com/api/episode/30",
+              "https://rickandmortyapi.com/api/episode/31",
+            ],
+            "gender": "Male",
+            "id": 5,
+            "image": "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
+            "location": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "name": "Jerry Smith",
+            "origin": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "species": "Human",
+            "status": "Alive",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/5",
+          },
+          Object {
+            "created": "2017-11-04T19:50:28.250Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/27",
+            ],
+            "gender": "Female",
+            "id": 6,
+            "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
+            "location": Object {
+              "name": "Abadango",
+              "url": "https://rickandmortyapi.com/api/location/2",
+            },
+            "name": "Abadango Cluster Princess",
+            "origin": Object {
+              "name": "Abadango",
+              "url": "https://rickandmortyapi.com/api/location/2",
+            },
+            "species": "Alien",
+            "status": "Alive",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/6",
+          },
+          Object {
+            "created": "2017-11-04T19:59:20.523Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/10",
+              "https://rickandmortyapi.com/api/episode/11",
+            ],
+            "gender": "Male",
+            "id": 7,
+            "image": "https://rickandmortyapi.com/api/character/avatar/7.jpeg",
+            "location": Object {
+              "name": "Testicle Monster Dimension",
+              "url": "https://rickandmortyapi.com/api/location/21",
+            },
+            "name": "Abradolf Lincler",
+            "origin": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "species": "Human",
+            "status": "unknown",
+            "type": "Genetic experiment",
+            "url": "https://rickandmortyapi.com/api/character/7",
+          },
+          Object {
+            "created": "2017-11-04T20:03:34.737Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/28",
+            ],
+            "gender": "Male",
+            "id": 8,
+            "image": "https://rickandmortyapi.com/api/character/avatar/8.jpeg",
+            "location": Object {
+              "name": "Citadel of Ricks",
+              "url": "https://rickandmortyapi.com/api/location/3",
+            },
+            "name": "Adjudicator Rick",
+            "origin": Object {
+              "name": "unknown",
+              "url": "",
+            },
+            "species": "Human",
+            "status": "Dead",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/8",
+          },
+          Object {
+            "created": "2017-11-04T20:06:54.976Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/24",
+            ],
+            "gender": "Male",
+            "id": 9,
+            "image": "https://rickandmortyapi.com/api/character/avatar/9.jpeg",
+            "location": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "name": "Agency Director",
+            "origin": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "species": "Human",
+            "status": "Dead",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/9",
+          },
+          Object {
+            "created": "2017-11-04T20:19:09.017Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/25",
+            ],
+            "gender": "Male",
+            "id": 10,
+            "image": "https://rickandmortyapi.com/api/character/avatar/10.jpeg",
+            "location": Object {
+              "name": "Worldender's lair",
+              "url": "https://rickandmortyapi.com/api/location/4",
+            },
+            "name": "Alan Rails",
+            "origin": Object {
+              "name": "unknown",
+              "url": "",
+            },
+            "species": "Human",
+            "status": "Dead",
+            "type": "Superhuman (Ghost trains summoner)",
+            "url": "https://rickandmortyapi.com/api/character/10",
+          },
+          Object {
+            "created": "2017-11-04T20:20:20.965Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/12",
+            ],
+            "gender": "Male",
+            "id": 11,
+            "image": "https://rickandmortyapi.com/api/character/avatar/11.jpeg",
+            "location": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "name": "Albert Einstein",
+            "origin": Object {
+              "name": "Earth (C-137)",
+              "url": "https://rickandmortyapi.com/api/location/1",
+            },
+            "species": "Human",
+            "status": "Dead",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/11",
+          },
+          Object {
+            "created": "2017-11-04T20:32:33.144Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/3",
+            ],
+            "gender": "Male",
+            "id": 12,
+            "image": "https://rickandmortyapi.com/api/character/avatar/12.jpeg",
+            "location": Object {
+              "name": "Anatomy Park",
+              "url": "https://rickandmortyapi.com/api/location/5",
+            },
+            "name": "Alexander",
+            "origin": Object {
+              "name": "Earth (C-137)",
+              "url": "https://rickandmortyapi.com/api/location/1",
+            },
+            "species": "Human",
+            "status": "Dead",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/12",
+          },
+          Object {
+            "created": "2017-11-04T20:33:30.779Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/31",
+            ],
+            "gender": "unknown",
+            "id": 13,
+            "image": "https://rickandmortyapi.com/api/character/avatar/13.jpeg",
+            "location": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "name": "Alien Googah",
+            "origin": Object {
+              "name": "unknown",
+              "url": "",
+            },
+            "species": "Alien",
+            "status": "unknown",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/13",
+          },
+          Object {
+            "created": "2017-11-04T20:51:31.373Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/10",
+            ],
+            "gender": "Male",
+            "id": 14,
+            "image": "https://rickandmortyapi.com/api/character/avatar/14.jpeg",
+            "location": Object {
+              "name": "Citadel of Ricks",
+              "url": "https://rickandmortyapi.com/api/location/3",
+            },
+            "name": "Alien Morty",
+            "origin": Object {
+              "name": "unknown",
+              "url": "",
+            },
+            "species": "Alien",
+            "status": "unknown",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/14",
+          },
+          Object {
+            "created": "2017-11-04T20:56:13.215Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/10",
+            ],
+            "gender": "Male",
+            "id": 15,
+            "image": "https://rickandmortyapi.com/api/character/avatar/15.jpeg",
+            "location": Object {
+              "name": "Citadel of Ricks",
+              "url": "https://rickandmortyapi.com/api/location/3",
+            },
+            "name": "Alien Rick",
+            "origin": Object {
+              "name": "unknown",
+              "url": "",
+            },
+            "species": "Alien",
+            "status": "unknown",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/15",
+          },
+          Object {
+            "created": "2017-11-04T21:12:45.235Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/15",
+            ],
+            "gender": "Male",
+            "id": 16,
+            "image": "https://rickandmortyapi.com/api/character/avatar/16.jpeg",
+            "location": Object {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20",
+            },
+            "name": "Amish Cyborg",
+            "origin": Object {
+              "name": "unknown",
+              "url": "",
+            },
+            "species": "Alien",
+            "status": "Dead",
+            "type": "Parasite, Cyborg",
+            "url": "https://rickandmortyapi.com/api/character/16",
+          },
+          Object {
+            "created": "2017-11-04T22:21:24.481Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/3",
+            ],
+            "gender": "Female",
+            "id": 17,
+            "image": "https://rickandmortyapi.com/api/character/avatar/17.jpeg",
+            "location": Object {
+              "name": "Anatomy Park",
+              "url": "https://rickandmortyapi.com/api/location/5",
+            },
+            "name": "Annie",
+            "origin": Object {
+              "name": "Earth (C-137)",
+              "url": "https://rickandmortyapi.com/api/location/1",
+            },
+            "species": "Human",
+            "status": "Alive",
+            "type": "",
+            "url": "https://rickandmortyapi.com/api/character/17",
+          },
+          Object {
+            "created": "2017-11-04T22:25:29.008Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/10",
+              "https://rickandmortyapi.com/api/episode/28",
+            ],
+            "gender": "Male",
+            "id": 18,
+            "image": "https://rickandmortyapi.com/api/character/avatar/18.jpeg",
+            "location": Object {
+              "name": "Citadel of Ricks",
+              "url": "https://rickandmortyapi.com/api/location/3",
+            },
+            "name": "Antenna Morty",
+            "origin": Object {
+              "name": "unknown",
+              "url": "",
+            },
+            "species": "Human",
+            "status": "Alive",
+            "type": "Human with antennae",
+            "url": "https://rickandmortyapi.com/api/character/18",
+          },
+          Object {
+            "created": "2017-11-04T22:28:13.756Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/10",
+            ],
+            "gender": "Male",
+            "id": 19,
+            "image": "https://rickandmortyapi.com/api/character/avatar/19.jpeg",
+            "location": Object {
+              "name": "unknown",
+              "url": "",
+            },
+            "name": "Antenna Rick",
+            "origin": Object {
+              "name": "unknown",
+              "url": "",
+            },
+            "species": "Human",
+            "status": "unknown",
+            "type": "Human with antennae",
+            "url": "https://rickandmortyapi.com/api/character/19",
+          },
+          Object {
+            "created": "2017-11-04T22:34:53.659Z",
+            "episode": Array [
+              "https://rickandmortyapi.com/api/episode/8",
+            ],
+            "gender": "Male",
+            "id": 20,
+            "image": "https://rickandmortyapi.com/api/character/avatar/20.jpeg",
+            "location": Object {
+              "name": "Interdimensional Cable",
+              "url": "https://rickandmortyapi.com/api/location/6",
+            },
+            "name": "Ants in my Eyes Johnson",
+            "origin": Object {
+              "name": "unknown",
+              "url": "",
+            },
+            "species": "Human",
+            "status": "unknown",
+            "type": "Human with ants in his eyes",
+            "url": "https://rickandmortyapi.com/api/character/20",
+          },
+        ]
+      }
+      searchBoxValue=""
+    >
+      <div
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <paginator
+          fifth={5}
+          first={1}
+          fourth={4}
+          paginatorHandler={[Function]}
+          second={2}
+          third={3}
+        >
+          <nav
+            aria-label="Page navigation"
+          >
+            <ul
+              className="pagination"
+              style={
+                Object {
+                  "opacity": 0.5,
+                }
+              }
+            >
+              <li>
+                <a
+                  aria-label="Previous"
+                  onClick={[Function]}
+                >
+                  <span
+                    aria-hidden="true"
+                  >
+                    «
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={[Function]}
+                >
+                  1
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={[Function]}
+                >
+                  2
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={[Function]}
+                >
+                  3
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={[Function]}
+                >
+                  4
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={[Function]}
+                >
+                  5
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="Next"
+                  onClick={[Function]}
+                >
+                  <span
+                    aria-hidden="true"
+                  >
+                    »
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </paginator>
+        <div
+          className="Home"
+        >
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T18:48:46.250Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/1",
+                  "https://rickandmortyapi.com/api/episode/2",
+                  "https://rickandmortyapi.com/api/episode/3",
+                  "https://rickandmortyapi.com/api/episode/4",
+                  "https://rickandmortyapi.com/api/episode/5",
+                  "https://rickandmortyapi.com/api/episode/6",
+                  "https://rickandmortyapi.com/api/episode/7",
+                  "https://rickandmortyapi.com/api/episode/8",
+                  "https://rickandmortyapi.com/api/episode/9",
+                  "https://rickandmortyapi.com/api/episode/10",
+                  "https://rickandmortyapi.com/api/episode/11",
+                  "https://rickandmortyapi.com/api/episode/12",
+                  "https://rickandmortyapi.com/api/episode/13",
+                  "https://rickandmortyapi.com/api/episode/14",
+                  "https://rickandmortyapi.com/api/episode/15",
+                  "https://rickandmortyapi.com/api/episode/16",
+                  "https://rickandmortyapi.com/api/episode/17",
+                  "https://rickandmortyapi.com/api/episode/18",
+                  "https://rickandmortyapi.com/api/episode/19",
+                  "https://rickandmortyapi.com/api/episode/20",
+                  "https://rickandmortyapi.com/api/episode/21",
+                  "https://rickandmortyapi.com/api/episode/22",
+                  "https://rickandmortyapi.com/api/episode/23",
+                  "https://rickandmortyapi.com/api/episode/24",
+                  "https://rickandmortyapi.com/api/episode/25",
+                  "https://rickandmortyapi.com/api/episode/26",
+                  "https://rickandmortyapi.com/api/episode/27",
+                  "https://rickandmortyapi.com/api/episode/28",
+                  "https://rickandmortyapi.com/api/episode/29",
+                  "https://rickandmortyapi.com/api/episode/30",
+                  "https://rickandmortyapi.com/api/episode/31",
+                ],
+                "gender": "Male",
+                "id": 1,
+                "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+                "location": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "name": "Rick Sanchez",
+                "origin": Object {
+                  "name": "Earth (C-137)",
+                  "url": "https://rickandmortyapi.com/api/location/1",
+                },
+                "species": "Human",
+                "status": "Alive",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/1",
+              }
+            }
+            key="1"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/1"
+            >
+              <Route
+                exact={true}
+                path="/detail/1"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/1"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/1"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/1.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Rick Sanchez
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T18:50:21.651Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/1",
+                  "https://rickandmortyapi.com/api/episode/2",
+                  "https://rickandmortyapi.com/api/episode/3",
+                  "https://rickandmortyapi.com/api/episode/4",
+                  "https://rickandmortyapi.com/api/episode/5",
+                  "https://rickandmortyapi.com/api/episode/6",
+                  "https://rickandmortyapi.com/api/episode/7",
+                  "https://rickandmortyapi.com/api/episode/8",
+                  "https://rickandmortyapi.com/api/episode/9",
+                  "https://rickandmortyapi.com/api/episode/10",
+                  "https://rickandmortyapi.com/api/episode/11",
+                  "https://rickandmortyapi.com/api/episode/12",
+                  "https://rickandmortyapi.com/api/episode/13",
+                  "https://rickandmortyapi.com/api/episode/14",
+                  "https://rickandmortyapi.com/api/episode/15",
+                  "https://rickandmortyapi.com/api/episode/16",
+                  "https://rickandmortyapi.com/api/episode/17",
+                  "https://rickandmortyapi.com/api/episode/18",
+                  "https://rickandmortyapi.com/api/episode/19",
+                  "https://rickandmortyapi.com/api/episode/20",
+                  "https://rickandmortyapi.com/api/episode/21",
+                  "https://rickandmortyapi.com/api/episode/22",
+                  "https://rickandmortyapi.com/api/episode/23",
+                  "https://rickandmortyapi.com/api/episode/24",
+                  "https://rickandmortyapi.com/api/episode/25",
+                  "https://rickandmortyapi.com/api/episode/26",
+                  "https://rickandmortyapi.com/api/episode/27",
+                  "https://rickandmortyapi.com/api/episode/28",
+                  "https://rickandmortyapi.com/api/episode/29",
+                  "https://rickandmortyapi.com/api/episode/30",
+                  "https://rickandmortyapi.com/api/episode/31",
+                ],
+                "gender": "Male",
+                "id": 2,
+                "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+                "location": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "name": "Morty Smith",
+                "origin": Object {
+                  "name": "Earth (C-137)",
+                  "url": "https://rickandmortyapi.com/api/location/1",
+                },
+                "species": "Human",
+                "status": "Alive",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/2",
+              }
+            }
+            key="2"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/2"
+            >
+              <Route
+                exact={true}
+                path="/detail/2"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/2"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/2"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/2.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Morty Smith
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T19:09:56.428Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/6",
+                  "https://rickandmortyapi.com/api/episode/7",
+                  "https://rickandmortyapi.com/api/episode/8",
+                  "https://rickandmortyapi.com/api/episode/9",
+                  "https://rickandmortyapi.com/api/episode/10",
+                  "https://rickandmortyapi.com/api/episode/11",
+                  "https://rickandmortyapi.com/api/episode/12",
+                  "https://rickandmortyapi.com/api/episode/14",
+                  "https://rickandmortyapi.com/api/episode/15",
+                  "https://rickandmortyapi.com/api/episode/16",
+                  "https://rickandmortyapi.com/api/episode/17",
+                  "https://rickandmortyapi.com/api/episode/18",
+                  "https://rickandmortyapi.com/api/episode/19",
+                  "https://rickandmortyapi.com/api/episode/20",
+                  "https://rickandmortyapi.com/api/episode/21",
+                  "https://rickandmortyapi.com/api/episode/22",
+                  "https://rickandmortyapi.com/api/episode/23",
+                  "https://rickandmortyapi.com/api/episode/24",
+                  "https://rickandmortyapi.com/api/episode/25",
+                  "https://rickandmortyapi.com/api/episode/26",
+                  "https://rickandmortyapi.com/api/episode/27",
+                  "https://rickandmortyapi.com/api/episode/29",
+                  "https://rickandmortyapi.com/api/episode/30",
+                  "https://rickandmortyapi.com/api/episode/31",
+                ],
+                "gender": "Female",
+                "id": 3,
+                "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+                "location": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "name": "Summer Smith",
+                "origin": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "species": "Human",
+                "status": "Alive",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/3",
+              }
+            }
+            key="3"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/3"
+            >
+              <Route
+                exact={true}
+                path="/detail/3"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/3"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/3"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/3.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Summer Smith
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T19:22:43.665Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/6",
+                  "https://rickandmortyapi.com/api/episode/7",
+                  "https://rickandmortyapi.com/api/episode/8",
+                  "https://rickandmortyapi.com/api/episode/9",
+                  "https://rickandmortyapi.com/api/episode/10",
+                  "https://rickandmortyapi.com/api/episode/11",
+                  "https://rickandmortyapi.com/api/episode/12",
+                  "https://rickandmortyapi.com/api/episode/14",
+                  "https://rickandmortyapi.com/api/episode/15",
+                  "https://rickandmortyapi.com/api/episode/16",
+                  "https://rickandmortyapi.com/api/episode/18",
+                  "https://rickandmortyapi.com/api/episode/19",
+                  "https://rickandmortyapi.com/api/episode/20",
+                  "https://rickandmortyapi.com/api/episode/21",
+                  "https://rickandmortyapi.com/api/episode/22",
+                  "https://rickandmortyapi.com/api/episode/23",
+                  "https://rickandmortyapi.com/api/episode/24",
+                  "https://rickandmortyapi.com/api/episode/25",
+                  "https://rickandmortyapi.com/api/episode/26",
+                  "https://rickandmortyapi.com/api/episode/27",
+                  "https://rickandmortyapi.com/api/episode/28",
+                  "https://rickandmortyapi.com/api/episode/29",
+                  "https://rickandmortyapi.com/api/episode/30",
+                  "https://rickandmortyapi.com/api/episode/31",
+                ],
+                "gender": "Female",
+                "id": 4,
+                "image": "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
+                "location": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "name": "Beth Smith",
+                "origin": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "species": "Human",
+                "status": "Alive",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/4",
+              }
+            }
+            key="4"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/4"
+            >
+              <Route
+                exact={true}
+                path="/detail/4"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/4"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/4"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/4.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Beth Smith
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T19:26:56.301Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/6",
+                  "https://rickandmortyapi.com/api/episode/7",
+                  "https://rickandmortyapi.com/api/episode/8",
+                  "https://rickandmortyapi.com/api/episode/9",
+                  "https://rickandmortyapi.com/api/episode/10",
+                  "https://rickandmortyapi.com/api/episode/11",
+                  "https://rickandmortyapi.com/api/episode/12",
+                  "https://rickandmortyapi.com/api/episode/13",
+                  "https://rickandmortyapi.com/api/episode/14",
+                  "https://rickandmortyapi.com/api/episode/15",
+                  "https://rickandmortyapi.com/api/episode/16",
+                  "https://rickandmortyapi.com/api/episode/18",
+                  "https://rickandmortyapi.com/api/episode/19",
+                  "https://rickandmortyapi.com/api/episode/20",
+                  "https://rickandmortyapi.com/api/episode/21",
+                  "https://rickandmortyapi.com/api/episode/22",
+                  "https://rickandmortyapi.com/api/episode/23",
+                  "https://rickandmortyapi.com/api/episode/26",
+                  "https://rickandmortyapi.com/api/episode/29",
+                  "https://rickandmortyapi.com/api/episode/30",
+                  "https://rickandmortyapi.com/api/episode/31",
+                ],
+                "gender": "Male",
+                "id": 5,
+                "image": "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
+                "location": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "name": "Jerry Smith",
+                "origin": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "species": "Human",
+                "status": "Alive",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/5",
+              }
+            }
+            key="5"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/5"
+            >
+              <Route
+                exact={true}
+                path="/detail/5"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/5"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/5"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/5.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Jerry Smith
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T19:50:28.250Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/27",
+                ],
+                "gender": "Female",
+                "id": 6,
+                "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
+                "location": Object {
+                  "name": "Abadango",
+                  "url": "https://rickandmortyapi.com/api/location/2",
+                },
+                "name": "Abadango Cluster Princess",
+                "origin": Object {
+                  "name": "Abadango",
+                  "url": "https://rickandmortyapi.com/api/location/2",
+                },
+                "species": "Alien",
+                "status": "Alive",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/6",
+              }
+            }
+            key="6"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/6"
+            >
+              <Route
+                exact={true}
+                path="/detail/6"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/6"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/6"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/6.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Abadango Cluster Princess
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T19:59:20.523Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/10",
+                  "https://rickandmortyapi.com/api/episode/11",
+                ],
+                "gender": "Male",
+                "id": 7,
+                "image": "https://rickandmortyapi.com/api/character/avatar/7.jpeg",
+                "location": Object {
+                  "name": "Testicle Monster Dimension",
+                  "url": "https://rickandmortyapi.com/api/location/21",
+                },
+                "name": "Abradolf Lincler",
+                "origin": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "species": "Human",
+                "status": "unknown",
+                "type": "Genetic experiment",
+                "url": "https://rickandmortyapi.com/api/character/7",
+              }
+            }
+            key="7"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/7"
+            >
+              <Route
+                exact={true}
+                path="/detail/7"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/7"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/7"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/7.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Abradolf Lincler
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T20:03:34.737Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/28",
+                ],
+                "gender": "Male",
+                "id": 8,
+                "image": "https://rickandmortyapi.com/api/character/avatar/8.jpeg",
+                "location": Object {
+                  "name": "Citadel of Ricks",
+                  "url": "https://rickandmortyapi.com/api/location/3",
+                },
+                "name": "Adjudicator Rick",
+                "origin": Object {
+                  "name": "unknown",
+                  "url": "",
+                },
+                "species": "Human",
+                "status": "Dead",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/8",
+              }
+            }
+            key="8"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/8"
+            >
+              <Route
+                exact={true}
+                path="/detail/8"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/8"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/8"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/8.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Adjudicator Rick
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T20:06:54.976Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/24",
+                ],
+                "gender": "Male",
+                "id": 9,
+                "image": "https://rickandmortyapi.com/api/character/avatar/9.jpeg",
+                "location": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "name": "Agency Director",
+                "origin": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "species": "Human",
+                "status": "Dead",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/9",
+              }
+            }
+            key="9"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/9"
+            >
+              <Route
+                exact={true}
+                path="/detail/9"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/9"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/9"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/9.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Agency Director
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T20:19:09.017Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/25",
+                ],
+                "gender": "Male",
+                "id": 10,
+                "image": "https://rickandmortyapi.com/api/character/avatar/10.jpeg",
+                "location": Object {
+                  "name": "Worldender's lair",
+                  "url": "https://rickandmortyapi.com/api/location/4",
+                },
+                "name": "Alan Rails",
+                "origin": Object {
+                  "name": "unknown",
+                  "url": "",
+                },
+                "species": "Human",
+                "status": "Dead",
+                "type": "Superhuman (Ghost trains summoner)",
+                "url": "https://rickandmortyapi.com/api/character/10",
+              }
+            }
+            key="10"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/10"
+            >
+              <Route
+                exact={true}
+                path="/detail/10"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/10"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/10"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/10.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Alan Rails
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T20:20:20.965Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/12",
+                ],
+                "gender": "Male",
+                "id": 11,
+                "image": "https://rickandmortyapi.com/api/character/avatar/11.jpeg",
+                "location": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "name": "Albert Einstein",
+                "origin": Object {
+                  "name": "Earth (C-137)",
+                  "url": "https://rickandmortyapi.com/api/location/1",
+                },
+                "species": "Human",
+                "status": "Dead",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/11",
+              }
+            }
+            key="11"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/11"
+            >
+              <Route
+                exact={true}
+                path="/detail/11"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/11"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/11"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/11.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Albert Einstein
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T20:32:33.144Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/3",
+                ],
+                "gender": "Male",
+                "id": 12,
+                "image": "https://rickandmortyapi.com/api/character/avatar/12.jpeg",
+                "location": Object {
+                  "name": "Anatomy Park",
+                  "url": "https://rickandmortyapi.com/api/location/5",
+                },
+                "name": "Alexander",
+                "origin": Object {
+                  "name": "Earth (C-137)",
+                  "url": "https://rickandmortyapi.com/api/location/1",
+                },
+                "species": "Human",
+                "status": "Dead",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/12",
+              }
+            }
+            key="12"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/12"
+            >
+              <Route
+                exact={true}
+                path="/detail/12"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/12"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/12"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/12.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Alexander
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T20:33:30.779Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/31",
+                ],
+                "gender": "unknown",
+                "id": 13,
+                "image": "https://rickandmortyapi.com/api/character/avatar/13.jpeg",
+                "location": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "name": "Alien Googah",
+                "origin": Object {
+                  "name": "unknown",
+                  "url": "",
+                },
+                "species": "Alien",
+                "status": "unknown",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/13",
+              }
+            }
+            key="13"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/13"
+            >
+              <Route
+                exact={true}
+                path="/detail/13"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/13"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/13"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/13.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Alien Googah
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T20:51:31.373Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/10",
+                ],
+                "gender": "Male",
+                "id": 14,
+                "image": "https://rickandmortyapi.com/api/character/avatar/14.jpeg",
+                "location": Object {
+                  "name": "Citadel of Ricks",
+                  "url": "https://rickandmortyapi.com/api/location/3",
+                },
+                "name": "Alien Morty",
+                "origin": Object {
+                  "name": "unknown",
+                  "url": "",
+                },
+                "species": "Alien",
+                "status": "unknown",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/14",
+              }
+            }
+            key="14"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/14"
+            >
+              <Route
+                exact={true}
+                path="/detail/14"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/14"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/14"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/14.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Alien Morty
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T20:56:13.215Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/10",
+                ],
+                "gender": "Male",
+                "id": 15,
+                "image": "https://rickandmortyapi.com/api/character/avatar/15.jpeg",
+                "location": Object {
+                  "name": "Citadel of Ricks",
+                  "url": "https://rickandmortyapi.com/api/location/3",
+                },
+                "name": "Alien Rick",
+                "origin": Object {
+                  "name": "unknown",
+                  "url": "",
+                },
+                "species": "Alien",
+                "status": "unknown",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/15",
+              }
+            }
+            key="15"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/15"
+            >
+              <Route
+                exact={true}
+                path="/detail/15"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/15"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/15"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/15.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Alien Rick
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T21:12:45.235Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/15",
+                ],
+                "gender": "Male",
+                "id": 16,
+                "image": "https://rickandmortyapi.com/api/character/avatar/16.jpeg",
+                "location": Object {
+                  "name": "Earth (Replacement Dimension)",
+                  "url": "https://rickandmortyapi.com/api/location/20",
+                },
+                "name": "Amish Cyborg",
+                "origin": Object {
+                  "name": "unknown",
+                  "url": "",
+                },
+                "species": "Alien",
+                "status": "Dead",
+                "type": "Parasite, Cyborg",
+                "url": "https://rickandmortyapi.com/api/character/16",
+              }
+            }
+            key="16"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/16"
+            >
+              <Route
+                exact={true}
+                path="/detail/16"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/16"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/16"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/16.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Amish Cyborg
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T22:21:24.481Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/3",
+                ],
+                "gender": "Female",
+                "id": 17,
+                "image": "https://rickandmortyapi.com/api/character/avatar/17.jpeg",
+                "location": Object {
+                  "name": "Anatomy Park",
+                  "url": "https://rickandmortyapi.com/api/location/5",
+                },
+                "name": "Annie",
+                "origin": Object {
+                  "name": "Earth (C-137)",
+                  "url": "https://rickandmortyapi.com/api/location/1",
+                },
+                "species": "Human",
+                "status": "Alive",
+                "type": "",
+                "url": "https://rickandmortyapi.com/api/character/17",
+              }
+            }
+            key="17"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/17"
+            >
+              <Route
+                exact={true}
+                path="/detail/17"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/17"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/17"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/17.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Annie
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T22:25:29.008Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/10",
+                  "https://rickandmortyapi.com/api/episode/28",
+                ],
+                "gender": "Male",
+                "id": 18,
+                "image": "https://rickandmortyapi.com/api/character/avatar/18.jpeg",
+                "location": Object {
+                  "name": "Citadel of Ricks",
+                  "url": "https://rickandmortyapi.com/api/location/3",
+                },
+                "name": "Antenna Morty",
+                "origin": Object {
+                  "name": "unknown",
+                  "url": "",
+                },
+                "species": "Human",
+                "status": "Alive",
+                "type": "Human with antennae",
+                "url": "https://rickandmortyapi.com/api/character/18",
+              }
+            }
+            key="18"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/18"
+            >
+              <Route
+                exact={true}
+                path="/detail/18"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/18"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/18"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/18.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Antenna Morty
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T22:28:13.756Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/10",
+                ],
+                "gender": "Male",
+                "id": 19,
+                "image": "https://rickandmortyapi.com/api/character/avatar/19.jpeg",
+                "location": Object {
+                  "name": "unknown",
+                  "url": "",
+                },
+                "name": "Antenna Rick",
+                "origin": Object {
+                  "name": "unknown",
+                  "url": "",
+                },
+                "species": "Human",
+                "status": "unknown",
+                "type": "Human with antennae",
+                "url": "https://rickandmortyapi.com/api/character/19",
+              }
+            }
+            key="19"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/19"
+            >
+              <Route
+                exact={true}
+                path="/detail/19"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/19"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/19"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/19.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Antenna Rick
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+          <card
+            character={
+              Object {
+                "created": "2017-11-04T22:34:53.659Z",
+                "episode": Array [
+                  "https://rickandmortyapi.com/api/episode/8",
+                ],
+                "gender": "Male",
+                "id": 20,
+                "image": "https://rickandmortyapi.com/api/character/avatar/20.jpeg",
+                "location": Object {
+                  "name": "Interdimensional Cable",
+                  "url": "https://rickandmortyapi.com/api/location/6",
+                },
+                "name": "Ants in my Eyes Johnson",
+                "origin": Object {
+                  "name": "unknown",
+                  "url": "",
+                },
+                "species": "Human",
+                "status": "unknown",
+                "type": "Human with ants in his eyes",
+                "url": "https://rickandmortyapi.com/api/character/20",
+              }
+            }
+            key="20"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              exact={true}
+              to="/detail/20"
+            >
+              <Route
+                exact={true}
+                path="/detail/20"
+              >
+                <Link
+                  aria-current={false}
+                  replace={false}
+                  to="/detail/20"
+                >
+                  <a
+                    aria-current={false}
+                    href="/detail/20"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="Card"
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/20.jpeg)",
+                        }
+                      }
+                    >
+                      <span />
+                      <span
+                        className="Name"
+                      >
+                        Ants in my Eyes Johnson
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+              </Route>
+            </NavLink>
+          </card>
+        </div>
+      </div>
+    </Home>
+  </Router>
+</MemoryRouter>
+`;

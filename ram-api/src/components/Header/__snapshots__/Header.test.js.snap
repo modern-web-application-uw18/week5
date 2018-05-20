@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Should render Header 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "jhy6uj",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "jhy6uj",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <withRouter(Header)
+      searchHandler={[Function]}
+    >
+      <Route
+        render={[Function]}
+      >
+        <Header
+          history={
+            Object {
+              "action": "POP",
+              "block": [Function],
+              "canGo": [Function],
+              "createHref": [Function],
+              "entries": Array [
+                Object {
+                  "hash": "",
+                  "key": "jhy6uj",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                },
+              ],
+              "go": [Function],
+              "goBack": [Function],
+              "goForward": [Function],
+              "index": 0,
+              "length": 1,
+              "listen": [Function],
+              "location": Object {
+                "hash": "",
+                "key": "jhy6uj",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              "push": [Function],
+              "replace": [Function],
+            }
+          }
+          location={
+            Object {
+              "hash": "",
+              "key": "jhy6uj",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            }
+          }
+          match={
+            Object {
+              "isExact": true,
+              "params": Object {},
+              "path": "/",
+              "url": "/",
+            }
+          }
+          searchHandler={[Function]}
+        >
+          <header
+            className="Header"
+          >
+            <SearchBox
+              searchHandler={[Function]}
+            >
+              <div
+                className="SearchBox"
+              >
+                <div
+                  className="row"
+                >
+                  <div
+                    className="col-md-12"
+                  >
+                    <div
+                      className="input-group"
+                    >
+                      <input
+                        className="form-control"
+                        onChange={[Function]}
+                        placeholder="Filter by character name..."
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SearchBox>
+            <span
+              className="HeaderTitle"
+            >
+              R&M Attack
+            </span>
+            <nav>
+              <navigationItems>
+                <ul
+                  className="NavigationItems"
+                >
+                  <navigationItem
+                    exact={true}
+                    link="/"
+                  >
+                    <li
+                      className="NavigationItem"
+                    >
+                      <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        exact={true}
+                        to="/"
+                      >
+                        <Route
+                          exact={true}
+                          path="/"
+                        >
+                          <Link
+                            aria-current="true"
+                            className="active"
+                            replace={false}
+                            style={Object {}}
+                            to="/"
+                          >
+                            <a
+                              aria-current="true"
+                              className="active"
+                              href="/"
+                              onClick={[Function]}
+                              style={Object {}}
+                            >
+                              Home
+                            </a>
+                          </Link>
+                        </Route>
+                      </NavLink>
+                    </li>
+                  </navigationItem>
+                  <navigationItem
+                    link="/detail"
+                  >
+                    <li
+                      className="NavigationItem"
+                    >
+                      <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        to="/detail"
+                      >
+                        <Route
+                          path="/detail"
+                        >
+                          <Link
+                            aria-current={false}
+                            replace={false}
+                            to="/detail"
+                          >
+                            <a
+                              aria-current={false}
+                              href="/detail"
+                              onClick={[Function]}
+                            >
+                              Detail
+                            </a>
+                          </Link>
+                        </Route>
+                      </NavLink>
+                    </li>
+                  </navigationItem>
+                  <navigationItem
+                    link="/favs"
+                  >
+                    <li
+                      className="NavigationItem"
+                    >
+                      <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        to="/favs"
+                      >
+                        <Route
+                          path="/favs"
+                        >
+                          <Link
+                            aria-current={false}
+                            replace={false}
+                            to="/favs"
+                          >
+                            <a
+                              aria-current={false}
+                              href="/favs"
+                              onClick={[Function]}
+                            >
+                              Favorites
+                            </a>
+                          </Link>
+                        </Route>
+                      </NavLink>
+                    </li>
+                  </navigationItem>
+                </ul>
+              </navigationItems>
+            </nav>
+          </header>
+        </Header>
+      </Route>
+    </withRouter(Header)>
+  </Router>
+</MemoryRouter>
+`;

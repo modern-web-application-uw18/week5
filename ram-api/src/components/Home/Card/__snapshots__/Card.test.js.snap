@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Should render Card 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "fugdr8",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "fugdr8",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <card
+      character={
+        Object {
+          "created": "2017-11-04T19:09:56.428Z",
+          "episode": Array [
+            "https://rickandmortyapi.com/api/episode/6",
+            "https://rickandmortyapi.com/api/episode/7",
+            "https://rickandmortyapi.com/api/episode/8",
+            "https://rickandmortyapi.com/api/episode/9",
+            "https://rickandmortyapi.com/api/episode/10",
+            "https://rickandmortyapi.com/api/episode/11",
+            "https://rickandmortyapi.com/api/episode/12",
+            "https://rickandmortyapi.com/api/episode/14",
+            "https://rickandmortyapi.com/api/episode/15",
+            "https://rickandmortyapi.com/api/episode/16",
+            "https://rickandmortyapi.com/api/episode/17",
+            "https://rickandmortyapi.com/api/episode/18",
+            "https://rickandmortyapi.com/api/episode/19",
+            "https://rickandmortyapi.com/api/episode/20",
+            "https://rickandmortyapi.com/api/episode/21",
+            "https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/23",
+            "https://rickandmortyapi.com/api/episode/24",
+            "https://rickandmortyapi.com/api/episode/25",
+            "https://rickandmortyapi.com/api/episode/26",
+            "https://rickandmortyapi.com/api/episode/27",
+            "https://rickandmortyapi.com/api/episode/29",
+            "https://rickandmortyapi.com/api/episode/30",
+            "https://rickandmortyapi.com/api/episode/31",
+          ],
+          "gender": "Female",
+          "id": 3,
+          "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+          "location": Object {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20",
+          },
+          "name": "Summer Smith",
+          "origin": Object {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20",
+          },
+          "species": "Human",
+          "status": "Alive",
+          "type": "",
+          "url": "https://rickandmortyapi.com/api/character/3",
+        }
+      }
+    >
+      <NavLink
+        activeClassName="active"
+        ariaCurrent="true"
+        exact={true}
+        to="/detail/3"
+      >
+        <Route
+          exact={true}
+          path="/detail/3"
+        >
+          <Link
+            aria-current={false}
+            replace={false}
+            to="/detail/3"
+          >
+            <a
+              aria-current={false}
+              href="/detail/3"
+              onClick={[Function]}
+            >
+              <div
+                className="Card"
+                style={
+                  Object {
+                    "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/3.jpeg)",
+                  }
+                }
+              >
+                <span />
+                <span
+                  className="Name"
+                >
+                  Summer Smith
+                </span>
+              </div>
+            </a>
+          </Link>
+        </Route>
+      </NavLink>
+    </card>
+  </Router>
+</MemoryRouter>
+`;

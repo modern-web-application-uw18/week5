@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchBox /> Should render SearchBox 1`] = `
+<SearchBox
+  searchHandler={[Function]}
+>
+  <div
+    className="SearchBox"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-12"
+      >
+        <div
+          className="input-group"
+        >
+          <input
+            className="form-control"
+            onChange={[Function]}
+            placeholder="Filter by character name..."
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</SearchBox>
+`;

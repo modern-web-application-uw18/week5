@@ -19,8 +19,13 @@ class MainStageRouter extends Component {
                             characterCount={this.props.characterCount} />)
                     }} />
 
-                    <Route exact path="/detail/:id" render={() => {
-                        return (<Detail favAddRemoveHandler={this.props.favAddRemoveHandler} />)
+                    <Route exact path="/detail/:id" render={(props) => {
+                        return (<Detail
+                            {...props}
+                            favAddRemoveHandler={this.props.favAddRemoveHandler}
+
+                            
+                        />)
                     }} />
 
                     <Route exact path="/favs" render={() => {

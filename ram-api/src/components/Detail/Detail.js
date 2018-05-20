@@ -5,11 +5,14 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
-class Detail extends Component {
+//https://github.com/airbnb/enzyme/issues/1112
+//export used to be able to test Route
+export class  Detail extends Component {
     state = {
         character: {}
     }
     componentDidMount() {
+
         fetch('https://rickandmortyapi.com/api/character/' + this.props.match.params.id)
             .then(response => response.json())
             .then(data => {

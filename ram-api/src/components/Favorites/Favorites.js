@@ -62,7 +62,7 @@ class Favorites extends Component {
 }
 
 Favorites.propTypes = {
-        characters: PropTypes.array
+        characters: PropTypes.array.isRequired
 }
 
 export default Favorites;

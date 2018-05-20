@@ -20,8 +20,7 @@ class Home extends Component {
 
 
     componentDidUpdate(prevProps, prevState) {
-
-        //if user types into the search area, go back to the first page of the paginator
+        //if user types into the search box, go back to the first page of the paginator
         if (prevProps.searchBoxValue.toLowerCase() !== this.props.searchBoxValue.toLowerCase()) {
             this.setState(prevState => {
                 return {
@@ -56,7 +55,6 @@ class Home extends Component {
                 break;
 
             case "prev":
-
                 this.setState(prevState => {
                     let _first, _second, _third, _fourth, _fifth;
                     _first = (prevState.first != null) && (prevState.first > 1) ? --prevState.first : 1;
@@ -175,7 +173,7 @@ Home.propTypes = {
     characters: PropTypes.array.isRequired,
     pageCount: PropTypes.number,
     characterCount: PropTypes.number,
-    searchBoxValue: PropTypes.string
+    searchBoxValue: PropTypes.string.isRequired
 }
 
 

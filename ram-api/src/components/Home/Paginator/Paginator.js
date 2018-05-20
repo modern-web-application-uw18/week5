@@ -6,9 +6,6 @@ import PropTypes from 'prop-types';
 const paginator = (props) => {
 
 
-
-
-
         return (
             <nav aria-label="Page navigation">
                 <ul className="pagination" style={{ opacity: 0.5 }}>
@@ -19,13 +16,11 @@ const paginator = (props) => {
                         </a>
                     </li>
 
-
                     <li><a onClick={(e) => props.paginatorHandler(e, "inner", props.first)}>{props.first}</a></li>
                     <li><a onClick={(e) => props.paginatorHandler(e, "inner", props.second)}>{props.second}</a></li>
                     <li><a onClick={(e) => props.paginatorHandler(e, "inner", props.third)}>{props.third}</a></li>
                     <li><a onClick={(e) => props.paginatorHandler(e, "inner", props.fourth)}>{props.fourth}</a></li>
                     <li><a onClick={(e) => props.paginatorHandler(e, "inner", props.fifth)}>{props.fifth}</a></li>
-
 
                     <li>
                         <a aria-label="Next" onClick={(e) => props.paginatorHandler(e, "next")}>
