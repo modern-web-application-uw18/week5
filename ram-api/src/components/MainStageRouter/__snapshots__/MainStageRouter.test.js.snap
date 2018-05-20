@@ -11,10 +11,9 @@ exports[`<MainStageRouter /> Should render MainStageRouter 1`] = `
       "entries": Array [
         Object {
           "hash": "",
-          "key": "daxgkf",
+          "key": "testKey",
           "pathname": "/",
           "search": "",
-          "state": undefined,
         },
       ],
       "go": [Function],
@@ -25,10 +24,9 @@ exports[`<MainStageRouter /> Should render MainStageRouter 1`] = `
       "listen": [Function],
       "location": Object {
         "hash": "",
-        "key": "daxgkf",
+        "key": "testKey",
         "pathname": "/",
         "search": "",
-        "state": undefined,
       },
       "push": [Function],
       "replace": [Function],

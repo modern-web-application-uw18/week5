@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> Should render Header 1`] = `
-<MemoryRouter>
+<MemoryRouter
+  initialEntries={
+    Array [
+      Object {
+        "key": "testKey",
+        "pathname": "/",
+      },
+    ]
+  }
+>
   <Router
     history={
       Object {
@@ -12,10 +21,9 @@ exports[`<Header /> Should render Header 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "jhy6uj",
+            "key": "testKey",
             "pathname": "/",
             "search": "",
-            "state": undefined,
           },
         ],
         "go": [Function],
@@ -26,10 +34,9 @@ exports[`<Header /> Should render Header 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "jhy6uj",
+          "key": "testKey",
           "pathname": "/",
           "search": "",
-          "state": undefined,
         },
         "push": [Function],
         "replace": [Function],
@@ -52,10 +59,9 @@ exports[`<Header /> Should render Header 1`] = `
               "entries": Array [
                 Object {
                   "hash": "",
-                  "key": "jhy6uj",
+                  "key": "testKey",
                   "pathname": "/",
                   "search": "",
-                  "state": undefined,
                 },
               ],
               "go": [Function],
@@ -66,10 +72,9 @@ exports[`<Header /> Should render Header 1`] = `
               "listen": [Function],
               "location": Object {
                 "hash": "",
-                "key": "jhy6uj",
+                "key": "testKey",
                 "pathname": "/",
                 "search": "",
-                "state": undefined,
               },
               "push": [Function],
               "replace": [Function],
@@ -78,10 +83,9 @@ exports[`<Header /> Should render Header 1`] = `
           location={
             Object {
               "hash": "",
-              "key": "jhy6uj",
+              "key": "testKey",
               "pathname": "/",
               "search": "",
-              "state": undefined,
             }
           }
           match={

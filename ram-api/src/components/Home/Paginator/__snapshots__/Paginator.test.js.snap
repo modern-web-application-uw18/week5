@@ -66,3 +66,72 @@ exports[`<Paginator /> Should render Paginator 1`] = `
   </nav>
 </paginator>
 `;
+
+exports[`<Paginator /> Should simulate clicks 1`] = `
+<paginator
+  paginatorHandler={[Function]}
+>
+  <nav
+    aria-label="Page navigation"
+  >
+    <ul
+      className="pagination"
+      style={
+        Object {
+          "opacity": 0.5,
+        }
+      }
+    >
+      <li>
+        <a
+          aria-label="Previous"
+          onClick={[Function]}
+        >
+          <span
+            aria-hidden="true"
+          >
+            «
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+        />
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+        />
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+        />
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+        />
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+        />
+      </li>
+      <li>
+        <a
+          aria-label="Next"
+          onClick={[Function]}
+        >
+          <span
+            aria-hidden="true"
+          >
+            »
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</paginator>
+`;

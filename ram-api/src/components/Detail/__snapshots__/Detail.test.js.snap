@@ -4,7 +4,10 @@ exports[`<Detail /> Should render Detail 1`] = `
 <MemoryRouter
   initialEntries={
     Array [
-      "/detail/3",
+      Object {
+        "key": "testKey",
+        "pathname": "/detail/3",
+      },
     ]
   }
 >
@@ -18,10 +21,9 @@ exports[`<Detail /> Should render Detail 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "godz2t",
+            "key": "testKey",
             "pathname": "/detail/3",
             "search": "",
-            "state": undefined,
           },
         ],
         "go": [Function],
@@ -32,10 +34,9 @@ exports[`<Detail /> Should render Detail 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "godz2t",
+          "key": "testKey",
           "pathname": "/detail/3",
           "search": "",
-          "state": undefined,
         },
         "push": [Function],
         "replace": [Function],
@@ -56,10 +57,9 @@ exports[`<Detail /> Should render Detail 1`] = `
             "entries": Array [
               Object {
                 "hash": "",
-                "key": "godz2t",
+                "key": "testKey",
                 "pathname": "/detail/3",
                 "search": "",
-                "state": undefined,
               },
             ],
             "go": [Function],
@@ -70,10 +70,9 @@ exports[`<Detail /> Should render Detail 1`] = `
             "listen": [Function],
             "location": Object {
               "hash": "",
-              "key": "godz2t",
+              "key": "testKey",
               "pathname": "/detail/3",
               "search": "",
-              "state": undefined,
             },
             "push": [Function],
             "replace": [Function],
@@ -82,10 +81,9 @@ exports[`<Detail /> Should render Detail 1`] = `
         location={
           Object {
             "hash": "",
-            "key": "godz2t",
+            "key": "testKey",
             "pathname": "/detail/3",
             "search": "",
-            "state": undefined,
           }
         }
         match={
@@ -109,10 +107,9 @@ exports[`<Detail /> Should render Detail 1`] = `
               "entries": Array [
                 Object {
                   "hash": "",
-                  "key": "godz2t",
+                  "key": "testKey",
                   "pathname": "/detail/3",
                   "search": "",
-                  "state": undefined,
                 },
               ],
               "go": [Function],
@@ -123,10 +120,9 @@ exports[`<Detail /> Should render Detail 1`] = `
               "listen": [Function],
               "location": Object {
                 "hash": "",
-                "key": "godz2t",
+                "key": "testKey",
                 "pathname": "/detail/3",
                 "search": "",
-                "state": undefined,
               },
               "push": [Function],
               "replace": [Function],
@@ -135,10 +131,9 @@ exports[`<Detail /> Should render Detail 1`] = `
           location={
             Object {
               "hash": "",
-              "key": "godz2t",
+              "key": "testKey",
               "pathname": "/detail/3",
               "search": "",
-              "state": undefined,
             }
           }
           match={

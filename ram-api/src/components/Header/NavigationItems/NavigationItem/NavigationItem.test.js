@@ -7,8 +7,10 @@ import { MemoryRouter} from 'react-router-dom';
 describe('<NavigationItem />', () => {
     it('Should render NavigationItem', () => {
 
+                //https://github.com/ReactTraining/react-router/issues/5579
+        //avoid memory router generating new keys everytime it runs so that snapshot remains the same
         const wrapper = mount(
-            <MemoryRouter> 
+            <MemoryRouter initialEntries={[ { pathname: '/', key: 'testKey' } ]}> 
                 <NavigationItem link="/detail" />
             </MemoryRouter>
         );

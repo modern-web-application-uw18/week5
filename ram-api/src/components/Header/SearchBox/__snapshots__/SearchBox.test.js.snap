@@ -29,3 +29,35 @@ exports[`<SearchBox /> Should render SearchBox 1`] = `
   </div>
 </SearchBox>
 `;
+
+exports[`<SearchBox /> Should simulate componentWillUnmount 1`] = `""`;
+
+exports[`<SearchBox /> Should simulate onchange event 1`] = `
+<SearchBox
+  searchHandler={[Function]}
+>
+  <div
+    className="SearchBox"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-12"
+      >
+        <div
+          className="input-group"
+        >
+          <input
+            className="form-control"
+            onChange={[Function]}
+            placeholder="Filter by character name..."
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</SearchBox>
+`;

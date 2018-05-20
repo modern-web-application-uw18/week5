@@ -1,8 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import SearchBox from './SearchBox'
-// import { MemoryRouter} from 'react-router-dom';
-// import characters from '../../__mocks__/characters.json'
 
 describe('<SearchBox />', () => {
     it('Should render SearchBox', () => {
@@ -12,6 +10,30 @@ describe('<SearchBox />', () => {
 
         expect(wrapper).toMatchSnapshot();
     })
+
+
+    it('Should simulate onchange event', () => {
+
+        const wrapper = mount(  <SearchBox searchHandler={jest.fn()} />      );
+
+
+        wrapper.find('.form-control').simulate('change');
+        expect(wrapper).toMatchSnapshot();
+    })
+
+
+
+    it('Should simulate componentWillUnmount', () => {
+
+        const wrapper = mount(  <SearchBox searchHandler={jest.fn()} />      );
+
+
+        wrapper.unmount();
+
+        expect(wrapper).toMatchSnapshot();
+    })
+
+
 })
 
 
