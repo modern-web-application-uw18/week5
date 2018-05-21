@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Details.css';
 
 import { 
   BrowserRouter as Router, Route, Link 
@@ -13,8 +14,8 @@ class Details extends Component {
   }
 
   componentDidMount() {
-    const characterId = this.props.match.params.characterId;
-    fetch(`https://swapi.co/api/people/${characterId}/`)
+    const id = this.props.match.params.id;
+    fetch(`https://swapi.co/api/people/${id}/`)
     .then(response => response.json())
     .then(data => {
       //console.log("Data ", data);
@@ -28,7 +29,7 @@ class Details extends Component {
   }
 
   render() {
-    //console.log("Character ID is: ",this.props.match.params.characterId);
+    //console.log("Character ID is: ",this.props.match.params.id);
     const { name, birth_year, height, hair_color, eye_color } = this.state.character;
     return (
       <div>
