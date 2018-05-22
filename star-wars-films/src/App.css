@@ -1,0 +1,13 @@
+body {
+  background-image: url("bkg.jpg");
+}
+
+.App {
+  text-align: center;
+}
+
+.App img {
+  width: 300px;
+}
+
+
