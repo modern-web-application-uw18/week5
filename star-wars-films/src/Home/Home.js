@@ -11,7 +11,8 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      characters: []
+      characters: [],
+      loading: true
     };
   }
 
@@ -22,7 +23,8 @@ class Home extends Component {
       //console.log(data);
       this.setState((prevState, props) => {
         return {
-          characters: data.results
+          characters: data.results,
+          loading: false
         };
       });
     })
@@ -38,6 +40,7 @@ class Home extends Component {
     //console.log('state ',this.state);    
     return (
       <div>
+        {this.state.loading ? <p>Hang on...</p> : null}
         {this.state.characters.map((character, index) =>
           <h1 key={index}><Link to={`/character/${this.getLastPart(character.url)}`}>{character.name}</Link></h1>
         )}
