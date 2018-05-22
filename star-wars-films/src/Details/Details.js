@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Details.css';
-
 import { 
   BrowserRouter as Router, Route, Link 
 } from "react-router-dom";

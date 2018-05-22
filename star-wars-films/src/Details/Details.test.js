@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Details from './Details';
-import { Route, Link, MemoryRouter } from 'react-router-dom'
+
+import { 
+  BrowserRouter as Router, Route 
+} from "react-router-dom";
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(
-    <MemoryRouter initialEntries={[ '/character/2' ]}>
-      <Details />
-    </MemoryRouter>, div);
+  const component = (
+    <Router>
+      <Route path="/character/2" component={Details} />
+    </Router>
+  );
+
+  ReactDOM.render(component, div);
   ReactDOM.unmountComponentAtNode(div);
 });
