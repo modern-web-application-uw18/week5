@@ -1,0 +1,12 @@
+.header {
+    text-align: left;
+    padding-left: 25px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
