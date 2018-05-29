@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.js';
 import './Character.css';
+import { Link } from 'react-router-dom';
 
-class Character extends Component {
+export default class Character extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -24,45 +25,39 @@ class Character extends Component {
     handleTap = () => {
 
         this.setState((prevState) => {
-            let currentlyExpanded = prevState.expanded;
-            return { expanded: !currentlyExpanded };
+            let detailShown = prevState.detailShown;
+            return { detailShown: !detailShown};
           });
       
     }
 
     render() {
+        // console.log("This person is: " + JSON.stringify(this.props));
         const person = this.props.person;
-        const imageName = "images/" + person.name + ".jpg"
+        // const imageName = "images/" + person.name + ".jpg"
 
-        if (this.state.expanded) {
+        if (this.state.detailShown) {
             return (
-                <a href="#" onClick={this.handleTap}>
-                <div className="CharacterDetails">
-                    <h1 className="Character">{person.name}</h1>
-                    <div className="Image">
-                        <img src={imageName}/>
-                    </div>
-                    <h2 className="Gender">Gender: {person.gender}</h2>
-                    <ul className="ChararcterTrivia">
-                        <li>Eye Color: {person.eye_color}</li>
-                        <li>Skin: {person.skin_color}</li>
-                        <li>Year Born: {person.birth_year}</li>
-                        <li>Mass {person.mass}</li>
-                    </ul>
-                </div>
-                </a>
+                
+                <button id="return">Return to Characters</button>
+    
             )
         } else {
             return (
-                <a href="#" onClick={this.handleTap}>
+//                <Link to={`/character/$person.name`}>
+                <Link to={
+                    {
+                        pathname: "/characterdetail/" + person.name,
+                        data: {person}
+                    }
+                }>
                 <div className="CharacterName"><h1>{person.name}</h1></div>
-                </a>
+                </Link>
             )
         }
     }
 }
 
-export default Character
 
 
                     

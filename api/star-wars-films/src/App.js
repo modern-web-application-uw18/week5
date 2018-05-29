@@ -1,51 +1,114 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Character from './Character.js';
+import { Link } from 'react-router-dom';
 
-const About = () => <p>Explore Star Wars Characters</p>;
+// export const About = () => <p>Explore Star Wars Characters</p>;
 
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      people: []
+      results: {},
+      page: 1,
+      people: [],
+      shown: true
     };
   }
 
+  
+  componentWillMount() {
+    this.getCharacters();
+  }
 
-  componentDidMount() {
-    fetch('https://swapi.co/api/people')
+  getCharacters = () => {
+    fetch(`https://swapi.co/api/people/?page=${this.state.page}`)
       .then(response => response.json())
       .then(data => {
-        this.setState((prevState, props) => {
+        this.setState(() => {
           return {
-            people: data.results
+            results: data
           };
         });
-      })
-    //.catch(error => console.log(error));
+      });
   }
+
+  toggleHidden() {
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
+  }
+
+  next = () => {
+    this.setState((prevState) => {
+      return { page: prevState.page + 1 };
+    }, this.getCharacters);
+  }
+
+  previous = () => {
+    this.setState((prevState) => {
+      return { page: prevState.page - 1, shown: false };
+    }, this.getCharacters);
+  }
+
 
 
   render() {
-  return (
-      <div className="App">
-        <div className='AppCharacter'>
-        {/* {this.state.people.map((person, idx) => <p key={idx}>{person.name}</p>)} */}
-        {this.state.people.map((person, idx) => <Character person={person} key={idx} />)}
-        </div>
-        <Router>
-          <div>
-          <Route path="/app" component={App} /> 
-          <Route path="/about" component={About} />
-          <Route path="/character" component={Character} />
-          </div>
-        </Router>
-      </div>
-    );
-  }
-}
 
-export default App;
+      if (this.state.page < 2) {
+        return (
+          <div className="CharacterPage">
+            {this.state.results.results && this.state.results.results.map(person => <div key={person.name}>
+                <Link to={
+                      {
+                          pathname: "/characterdetail/" + person.name,
+                          data: {person}
+                      }
+                  }>
+                  <h1 id='CharacterName'>{person.name}</h1>
+                </Link>
+              </div>
+            )}
+            <button id='.next' onClick={this.next}>Get Characters</button>
+          </div>
+          
+        )
+      }
+      else if (this.state.page < 9) {
+        return (
+          <div className="CharacterPage">
+            {this.state.results.results && this.state.results.results.map(person => <div key={person.name}>
+              <Link to={
+                      {
+                          pathname: "/characterdetail/" + person.name,
+                          data: {person}
+                      }
+                  }>
+              <h1 id='CharacterPage'>{person.name}</h1>
+              </Link>
+            </div>
+            )}
+            <button id=".previous" onClick={this.previous}>Previous Characters</button>
+            <button id='.next' onClick={this.next}>Next Characters</button>
+          </div>
+        );
+      }
+      else return (
+        <div className="CharacterPage">
+        {this.state.results.results && this.state.results.results.map(person => <div key={person.name}>
+          <Link to={
+                  {
+                      pathname: "/characterdetail/" + person.name,
+                      data: {person}
+                  }
+              }>
+          <h1 id='CharacterPage'>{person.name}</h1>
+          </Link>
+        </div>
+        )}
+        <button id=".previous" onClick={this.previous}>Previous Characters</button>
+      </div>
+      );
+ 
+   }
+}
