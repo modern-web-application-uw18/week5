@@ -1,19 +1,34 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
-//may need to:
-//define People as a const in Card.js
-//pull match location url from match
-//run a comparative map over the array of previous people in Card rendered array
-//make a new api call in People
-//set the state in People
-//render the returned data
+class People extends Component {   
 
-class People extends Component {
   render() {
-    console.log(this.props);
-    let {people} = this.props;
-    //console.log({people.name})
-    return <h1>{people}</h1>
+    if (this.props.redirect) {
+      return <Redirect to='/card' />
+    }
+
+    return (
+      <Router>  
+            <div className='container'>
+                {this.props.loading ? <h1> Loading... </h1> : null} 
+                {this.props.error ? <p> {this.props.error} </p> : null} 
+                {this.props.people.people.map((people, id) => {
+                    return (
+                        <div className='smallContainer' key={id}>    
+                        <Link to={`/card/${people.name}`} onClick={(e) =>
+                                    this.props.showCharacter(e, people)}>
+                            <span className='card'>
+                                <p>{people.name}</p>
+                            </span>
+                        </Link>
+                        </div>
+                    )
+                })}
+            </div>
+        </Router>
+    )
   }
 }
 

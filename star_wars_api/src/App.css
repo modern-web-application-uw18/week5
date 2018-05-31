@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
 .App {
   text-align: center;
   list-style: none;
@@ -14,7 +21,6 @@
 }
 
 .header, a:link{
-  margin-left: 0px;
   font-size: 22px;
   list-style-type: none;
   display: inline;
@@ -22,8 +28,18 @@
 }
 
 .header li {
+  margin-left: 110px;
+  display: block;
+  line-height: 25px;
+}
+
+.header li:nth-child {
   margin-left: 40px;
   display: inline-block;
+}
+
+.header a:link::nth-child(-n+3) {
+  font-size: 60px;
 }
 
 .nav {
@@ -70,15 +86,32 @@ html {
   list-style: none;
   border: 1px solid white;
   border-radius: 5px;
-  background-color:rgba(209, 208, 211, 0.44);
+  background-color:rgba(209, 208, 211, 0.13);
 }
 
 .card:hover {
-  background-color: rgba(202, 198, 215, 0.3);
-  -webkit-box-shadow: 11px 10px 46px 0px rgba(255, 255, 255, 0.08);
-  -moz-box-shadow: 11px 10px 46px 0px rgba(255, 255, 255, 255, 0.08);
-  box-shadow: 11px 10px 46px 0px rgba(255, 255, 255, 0.08);
-  border: 1px solid hotpink;
+  background-color: rgba(20, 19, 19, 0.922);
+  -webkit-box-shadow: 11px 10px 46px 0px rgba(255, 255, 255, 0.10);
+  -moz-box-shadow: 11px 10px 46px 0px rgba(255, 255, 255, 255, 0.10);
+  box-shadow: 11px 10px 46px 0px rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(177,101,160, 0.9);
+}
+
+.cardOpened {
+  width: 400px;
+  height: 400px;
+  margin: 80px auto 0 auto;
+  padding: 25px 0 0 60px;
+  display: block;
+  position: relative;
+  clear: both;
+  text-align: left;
+  list-style: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(20, 19, 19, 0.922);
+  border: 2px solid rgba(177, 101, 160, 0.9);
 }
 
 .character{
@@ -97,7 +130,5 @@ a:link {
 }
 
 a:hover {
-  color: hotpink;
+  color : rgba(177, 101, 160, 1.0);
 }
-
-
