@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.App {
+  text-align: center;
+  list-style: none;
+  background-image: url("./images/sw.jpg"); 
+  position: relative;
+  display: block;
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.header, a:link{
+  font-size: 22px;
+  list-style-type: none;
+  display: inline;
+  position: relative;
+}
+
+.header li {
+  margin-left: 110px;
+  display: block;
+  line-height: 25px;
+}
+
+.header li:nth-child {
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.header a:link::nth-child(-n+3) {
+  font-size: 60px;
+}
+
+.nav {
+  width: 100%;
+  height: 50px;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+html {
+  background: url(images/sw.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  font-family: roboto;
+}
+
+.container {
+  width: 100%;
+  height: 700px;
+  margin: 60px auto 0 auto;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.smallContainer {
+  width: 200px;
+  height: 200px;
+  margin: 20px 20px 20px 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  padding-top: 15px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  list-style: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color:rgba(209, 208, 211, 0.13);
+}
+
+.card:hover {
+  background-color: rgba(20, 19, 19, 0.922);
+  -webkit-box-shadow: 11px 10px 46px 0px rgba(255, 255, 255, 0.10);
+  -moz-box-shadow: 11px 10px 46px 0px rgba(255, 255, 255, 255, 0.10);
+  box-shadow: 11px 10px 46px 0px rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(177,101,160, 0.9);
+}
+
+.cardOpened {
+  width: 400px;
+  height: 400px;
+  margin: 80px auto 0 auto;
+  padding: 25px 0 0 60px;
+  display: block;
+  position: relative;
+  clear: both;
+  text-align: left;
+  list-style: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(20, 19, 19, 0.922);
+  border: 2px solid rgba(177, 101, 160, 0.9);
+}
+
+.character{
+  width: 100%;
+  height: 900px;
+  display: block;
+  position: relative;
+}
+
+a {
+  color:white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color : rgba(177, 101, 160, 1.0);
+}
