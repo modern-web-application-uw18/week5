@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pokemon {
+  padding: 5px;
+  border: 1px solid rgb(244, 244, 244);
+  margin: 5px;
+  text-decoration: none;
+}
+
+.name {
+  text-transform: capitalize;
+}
+
+.description {
+  font-size: 12px;
+}
+
+.nextPage {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer {
+  margin: 5px;
+  padding: 5px;
+}
+
+header ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
