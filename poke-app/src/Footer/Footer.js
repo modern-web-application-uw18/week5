@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 
-import {
-  BrowserRouter as Router, Route, Link
-} from 'react-router-dom';
-
-import Home from '../Home/Home.js';
-
 export default class Footer extends Component {
 
     render() {
         return (
-            <footer>
-                <Route exact path='/' render={() => <Home url={this.props.next} />} />
-            </footer>
+          <footer>
+            {this.props.previousURL && <div className="btn" onClick={this.props.fetchURL(this.props.previousURL)} title={this.props.previousURL}>Previous 20</div>}
+            {this.props.nextURL && <div className="btn" onClick={this.props.fetchURL(this.props.nextURL)} title={this.props.nextURL}>Next 20</div>}
+          </footer>
         );
     }
 }

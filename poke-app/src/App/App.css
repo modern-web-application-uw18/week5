@@ -31,25 +31,6 @@
   }
 }
 
-.pokemon {
-  padding: 5px;
-  border: 1px solid rgb(244, 244, 244);
-  margin: 5px;
-  text-decoration: none;
-}
-
-.name {
-  text-transform: capitalize;
-}
-
-.description {
-  font-size: 12px;
-}
-
-.nextPage {
-  cursor: pointer;
-}
-
 main {
   display: flex;
   flex-direction: row;
@@ -58,16 +39,5 @@ main {
   align-content: space-around;
   width: 60%;
   margin: 0 auto;
-}
-
-footer {
-  margin: 5px;
-  padding: 5px;
-}
-
-header ul {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-evenly;
-  list-style-type: none;
+  padding: 10px 0;
 }

@@ -1,0 +1,28 @@
+h2 {
+  text-transform: capitalize;
+}
+
+#stats {
+  display: inline-block;
+}
+
+#pokemonDescription {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.description:first-child,
+.description:last-child {
+  width: 100%;
+}
+
+.description:not(:first-child, :last-child) {
+  flex: 1;
+}
+
+.description div {
+  padding: 3px;
+}
