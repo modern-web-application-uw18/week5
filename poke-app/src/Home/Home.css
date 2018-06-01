@@ -1,0 +1,52 @@
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+footer div {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 5px;
+  border: 1px solid #181818;
+  border-radius: 10px;
+}
+
+.pokemon {
+  padding: 5px;
+  border: 1px solid rgb(244, 244, 244);
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pokemon:hover {
+  border: 1px solid #EE343B;
+}
+
+.name {
+  text-transform: capitalize;
+}
+
+.description {
+  font-size: 12px;
+}
+
+.nextPage {
+  cursor: pointer;
+}
+
+footer {
+  margin: 5px;
+  padding: 5px;
+}
+
+header ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
