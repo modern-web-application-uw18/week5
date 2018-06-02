@@ -1,0 +1,57 @@
+
+{
+    "characters": {
+      "character": [
+        {
+            "personID": "Luke Skywalker",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfx6bpsrceI60IE9et0JVgRC8V6L_BCxKJ892NYBUd69KrnKmR",
+            "image": "https://i.pinimg.com/originals/8a/27/47/8a2747689d71083d1c766ffff9f37cc1.jpg"
+        },
+        {
+            "personID": "C-3PO",
+            "thumbnail": "http://www.starwarshelmets.com/2007/ANH_HD_3po07.jpg",
+            "image": "http://fiona-clarke.com/painting/C3PO~0.jpg"
+        },
+        {
+            "personID": "R2-D2",
+            "thumbnail": "https://cdn.thisiswhyimbroke.com/images/life-size-r2d2-figure-640x534.jpg",
+            "image": "https://i.pinimg.com/736x/78/c7/43/78c743c8fe20b0e20f0f928ea1470d6e--rd-starwars.jpg"
+        },
+        {
+            "personID": "Darth Vader",
+            "thumbnail": "http://digitalspyuk.cdnds.net/15/50/980x490/landscape-1449498579-darth-vader-star-wars.jpg",
+            "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/darth-vader-star-wars-michael-greenaway.jpg"
+        },
+        {
+            "personID": "Leia Organa",
+            "thumbnail": "https://vignette.wikia.nocookie.net/starwars/images/8/89/Leia_endorpromo02.jpg/revision/latest/scale-to-width-down/500?cb=20080506155343",
+            "image": "http://dtlv.com/files/2015/12/jska_priebe_leia_organa_solo_WEB.jpg" 
+        },
+        {
+            "personID": "Owen Lars",
+            "thumbnail": "https://vignette.wikia.nocookie.net/starwars/images/9/91/OwenLarsHS-SWE.jpg/revision/latest?cb=20120428164235",
+            "image": "https://1.bp.blogspot.com/-qT_LG7Cycvs/ViQtGwhSX3I/AAAAAAAAERE/cl1CsN5ku1Y/s1600/PhilBrown_UncleOwen.jpg" 
+        },
+        {
+            "personID": "Beru Whitesun lars",
+            "thumbnail": "https://vignette.wikia.nocookie.net/headhuntersholosuite/images/0/0c/Beru_Lars_002.jpg/revision/latest?cb=20100625172329",
+            "image": "https://i.pinimg.com/originals/2b/bb/71/2bbb712405c574c6ce78730e00464a8e.jpg" 
+        },
+        {
+            "personID": "R5-D4",
+            "thumbnail": "https://i.pinimg.com/originals/18/22/af/1822af374fe6fd30facbdf47a3b105e2.jpg",
+            "image": "https://pre00.deviantart.net/a196/th/pre/i/2016/076/0/9/r5_d4_by_phraggle-d9vgveq.jpg" 
+        },
+        {
+            "personID": "Biggs Darklighter",
+            "thumbnail": "https://vignette.wikia.nocookie.net/starwars/images/0/00/BiggsHS-ANH.png/revision/latest?cb=20130305010406",
+            "image": "https://vignette.wikia.nocookie.net/starwars/images/2/20/SWEMP8-FC.jpg/revision/latest?cb=20071108175644" 
+        },
+        {
+            "personID": "Obi-Wan Kenobi",
+            "thumbnail": "https://zombiesruineverything.files.wordpress.com/2013/11/obs.jpg",
+            "image": "https://ixxidesign.azureedge.net/media/1045227/09-Obi-Wan-Kenobi.jpg?width=498" 
+        }
+      ]
+    }
+  }
