@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import CharacterDetail from './CharacterDetail';
 import Home from './Home';
 // import Page from './Page';

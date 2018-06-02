@@ -140,6 +140,7 @@ class Home extends Component {
   }
 
   getId = (character) => {
+    // event.preventDefault();
     var findId = character.split("/");
     const id = Number(findId[findId.length - 2]);
     // console.log(character);
@@ -167,8 +168,8 @@ class Home extends Component {
               <button className="btn">Previous</button>
              <button onClick={this.nextPage}
                   className="btn">Next</button>
-              <p>Next people: {next}</p>
-              <p>Previous people: {previous}</p>
+              {/* <p>Next people: {next}</p> */}
+              {/* <p>Previous people: {previous}</p> */}
               <Link to="/">{this.state.previous}</Link>
               <div className='characters-page'>
                   {this.state.loading ? <p>Loading ...</p> : null}

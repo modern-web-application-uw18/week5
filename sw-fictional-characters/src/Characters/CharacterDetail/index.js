@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+
+
 
 class CharacterDetail extends Component {
     constructor(props)  {
@@ -58,14 +61,10 @@ class CharacterDetail extends Component {
                     <li> 
                         <Link to="/">Home</Link>
                     </li>
-                    {/* <li> 
-                        <Link to="/About">About</Link>
-                    </li> */}
                   </ul>
                 </nav>
 
-                 <h3> Character Detail Page </h3>
-                <h4>{name}</h4>
+                <u><h3>{name}</h3></u>
                 <p>Gender: {gender}</p>
                 <p>Height: {height}</p>
                 <p>Weight: {mass}</p>
@@ -79,4 +78,16 @@ class CharacterDetail extends Component {
     }
 }
 
+const propTypes = {
+  name: PropTypes.string,
+  height: PropTypes.number,
+  mass: PropTypes.number, 
+  hair_color: PropTypes.string, 
+  skin_color: PropTypes.string, 
+  eye_color: PropTypes.string, 
+  birth_year: PropTypes.string, 
+  gender: PropTypes.string 
+}; 
+
+CharacterDetail.propTypes = propTypes;
 export default CharacterDetail;
