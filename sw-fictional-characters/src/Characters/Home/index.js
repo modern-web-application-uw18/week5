@@ -7,6 +7,7 @@ class Home extends Component {
   constructor(props) {
       super(props);
       this.state = {
+        url: null,
         next: null,
         previous: null,
         characters: [],
@@ -46,10 +47,15 @@ class Home extends Component {
   }
 
   getCharacters = () => {
+    let nextUrl = 'https://swapi.co/api/people/';
     // const characterId = this.state.people.results[].id;
     // console.log("Home Character Id is: ", characterId);
+    if (this.state.url) 
+    {
+      nextUrl = this.state.url;
+    }
 
-    fetch('https://swapi.co/api/people/')
+    fetch(nextUrl)
     // fetch('https://swapi.co/api/films/')
       .then(response => response.json())
       .then(data => {
@@ -88,8 +94,10 @@ class Home extends Component {
     //   }
     // }
   nextPage = () => {
+        
         this.setState((prevState, props) => {
           const next = prevState.next;
+          this.state.url = next;
           var page = next.split("=");
           // console.log("Page length: ", page.length)
           // console.log("First Page: ", page[0]);
@@ -98,9 +106,9 @@ class Home extends Component {
           // console.log("Next page is: ", nextValue);
     
           if (next)  {
-            nextValue = Number(nextValue);
+            nextValue = Number(nextValue) + 1;
           } else {
-            nextValue = 0;
+            nextValue = 1;
           }
           
           console.log("Next page is: ", nextValue);
@@ -118,6 +126,7 @@ class Home extends Component {
   prevPage = () => {
     this.setState((prevState, props) => {
       const prev = prevState.previous;
+      this.state.url = prev;
       var page = prev.split("=");
 
       var prevValue = Number(page[page.length - 1]);
@@ -145,8 +154,10 @@ class Home extends Component {
     return id;
   }
 
+
+
   render() {
-      const nextpage = this.nextPage;
+      // const nextpage = this.nextPage;
       
       const next = <Link to="/">{this.state.next}</Link>;
       const previous = <Link to="/">{this.state.previous}</Link>;
@@ -162,12 +173,11 @@ class Home extends Component {
 
       return (
           <div>
-              <button className="btn">Previous</button>
-              <button onClick={this.nextPage}
-                  className="btn">Next</button>
+              <button onClick={this.prevPage} className="btn">Previous</button>
+              <button onClick={this.nextPage} className="btn">Next</button>
               {/* <p>Next people: {next}</p> */}
               {/* <p>Previous people: {previous}</p> */}
-              <Link to="/">{this.state.previous}</Link>
+              {/* <Link to="/">{this.state.previous}</Link> */}
               <div className='characters-page'>
                   {this.state.loading ? <p>Loading ...</p> : null}
                   {this.state.error ? <p>{this.state.error}</p> : null}
