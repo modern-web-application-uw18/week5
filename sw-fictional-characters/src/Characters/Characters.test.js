@@ -12,6 +12,6 @@ it('renders without crashing', () => {
 //         </div>
 //     </Router>   
 //     );
-  ReactDOM.render(<Character />, div);
+  ReactDOM.render(<Characters />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

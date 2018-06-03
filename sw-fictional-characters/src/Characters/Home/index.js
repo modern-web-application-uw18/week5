@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import CharacterImage from '../images/swcharacter.png';
+// import CharacterImage from '../../../public/images/swcharacter.png';
 import { 
      Link 
-  } from 'react-router-dom';
+  } from 'react-router-dom'
 
 class Home extends Component {
   constructor(props) {
@@ -153,6 +155,8 @@ class Home extends Component {
             <div key={key} className="grid-col-2">
                 <Link to={`/CharacterDetail/${this.getId(character.url)}/`}>
                   <div className="content">
+                    {/* <img src={CharacterImage} className="App-logo" alt="logo" /> */}
+                    <img src={CharacterImage} className="sw-character"  alt="star wars character" />
                     <p key={key}>{character.name}</p>
                   </div>
                 </Link>

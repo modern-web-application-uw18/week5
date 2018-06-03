@@ -30,7 +30,6 @@ const Characters = () => {
                         <Route exac path="/" component={Home} />
                         <Route path="/About" component={About} />
                         <Route path="/CharacterDetail/:characterId/" component={CharacterDetail} />
-                        {/* <Route component={NoMatch} /> */}
                     </div>
                  </Router>
               </div>

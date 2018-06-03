@@ -181,6 +181,8 @@
   height: 2rem;
 }
 
+
+
 .prev-button {
   position: absolute;
   left: 1rem;
@@ -200,6 +202,10 @@
     border-radius: .3rem;
     background: moccasin;
   }
+
+.sw-character {
+    height: 6rem;
+}
 /* 
   .shopping-cart {
     width: 90%;
