@@ -18,12 +18,10 @@ class CharacterDetail extends Component {
         //     return fetch(url).then(response => response.json())
         // })
 
-
         // console.log(this.props.match.params.filmId);
         const characterId = this.props.match.params.characterId;
-        // console.log("Character Id is: ", characterId);
-
-        fetch(`https://swapi.co/api/people/${characterId}/`)
+        const person = `https://swapi.co/api/people/${characterId}/`;
+        fetch(person)
         .then(response => response.json())
         .then(data => {
           console.log(data)
@@ -55,8 +53,6 @@ class CharacterDetail extends Component {
                 eye_color, birth_year, gender } = this.state.detail;
 
         return (
-          
-
             <div>
                 <nav>
                   <ul className="sw-navigation-bar">

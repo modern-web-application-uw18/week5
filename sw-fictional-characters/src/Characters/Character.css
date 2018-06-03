@@ -86,6 +86,7 @@
     padding: 1rem;
     text-align: center;
     border-radius: .5rem;
+    width: 10rem;
   }
   
   
@@ -99,83 +100,17 @@
   }
 
   
-  /* .rental-property {
-    border: .1rem dashed lightgray;
-    margin: 1rem 0;
-    font: normal normal 16px/20px Arial san-serif;
-    width: 21rem;
-    margin: 1rem .3rem;
-  } */
-
-  /* .rental-title {
-    font: bold normal 12px/.5 'Trebuchet MS', Verdana, Calibri, san-serif;
-    width: 100%;
-    text-align: left;
-    height: .1rem;
-  } */
-
-  /* .rental-subtitle {
-    font: bold normal .8rem Verdana, 'Trebuchet MS', san-serif;
-    text-align: left;
-    width: 100%;
-  } */
- 
-  /* .rental-price {
-    font: normal normal .8rem  'Trebuchet MS', san-serif;
-    text-align: left;
-    color: lightslategray;
-    width: 100%;
-    height: .5rem;
-  } */
-/* 
-  .rental-type {
-    font: normal normal .8rem  'Trebuchet MS', san-serif;
-    text-align: left;
-    width: 100%;
-    height: .5rem;
-  } */
-
-/*   
-.image-position {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    width: 100%;
-  } */
-/* 
-  .alt-image-position {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    width: 40%;
-    height: 100%;
-  } */
-  
-  
   .image-box {
     width: 100%;
     height: 50vmin;
     border-radius: .2rem;
   }
   
-
-  /* .property-info {
-    margin: 0 .5rem;
-    padding: .1rem .1rem;
-    width: 100%;
-    text-align: left;
-    padding-left: .1rem;
-    
-  } */
-
 .nav-buttons {
   width: 80%;
   position: relative;
   display: flex;
   flex-direction: column;
-  /* border: .1rem dashed blue; */
   margin: .5rem 2rem;
   padding: 0 1rem;
   height: 2rem;
@@ -206,13 +141,3 @@
 .sw-character {
     height: 6rem;
 }
-/* 
-  .shopping-cart {
-    width: 90%;
-    border: .05rem dashed brown;
-    border-radius: .5rem;
-    text-align: center;
-    margin-top: 1rem;
-    font-weight: bold;
-    margin-left: 5%;
-  } */

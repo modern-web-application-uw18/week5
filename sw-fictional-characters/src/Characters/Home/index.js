@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CharacterImage from '../images/swcharacter.png';
-// import CharacterImage from '../../../public/images/swcharacter.png';
+// import CharacterImage from 'public/images/swcharacter.png';
 import { 
      Link 
   } from 'react-router-dom'
@@ -20,38 +20,41 @@ class Home extends Component {
 
   componentDidMount() {
     this.getCharacters();
-
-    // fetch('https://swapi.co/api/people/')
-    // // fetch('https://swapi.co/api/films/')
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     // console.log(data)
-    //     this.setState((prevState, props) => {
-    //       return {
-    //         next: data.next,
-    //         previous: data.previous,
-    //         characters: data.results,
-    //         // characters: data.results[0].characters,
-    //         loading: false
-    //       };
-        
-    //     });
-    //   })
-    //   .catch(error => {
-    //       console.log(error)
-    //       this.setState((prevState, props) => {
-    //         return {
-    //           loading: false,
-    //           error: 'Error when retrieving characters'
-    //         };
-    //       })
-    //     });
   }
+
+  getPageNo = () => {
+    this.setState((prevState, props) => {
+        const next = prevState.next;
+        var page = next.split("=");
+        // console.log("Page length: ", page.length)
+        // console.log("First Page: ", page[0]);
+        // console.log("Second Page: ", page[1]);
+        var nextValue = Number(page[page.length - 1]);
+        // console.log("Next page is: ", nextValue);
+  
+        if (next)  {
+          nextValue = Number(nextValue) + 1;
+        } else {
+          nextValue = 1;
+        }
+        
+        console.log("Next page is: ", nextValue);
+        const nextpage = page[0] + '=' + (nextValue + 1);
+        // console.log("The next-page is: ", nextpage);
+        // console.log("Previous Page is: ", next);
+        return {
+          previous: next,
+          next: nextpage,
+          url: next
+        };
+      }, this.getCharacters);
+  }
+
 
   getCharacters = () => {
     let nextUrl = 'https://swapi.co/api/people/';
     // const characterId = this.state.people.results[].id;
-    // console.log("Home Character Id is: ", characterId);
+    // console.log("Home Character Id is: ", charpageNoacterId);
     if (this.state.url) 
     {
       nextUrl = this.state.url;
@@ -71,8 +74,8 @@ class Home extends Component {
             // characters: data.results[0].characters,
             loading: false
           };
-        
         });
+        
       })
       .catch(error => {
           console.log(error)
@@ -86,39 +89,36 @@ class Home extends Component {
   }
 
   nextPage = () => {
-        
-        this.setState((prevState, props) => {
-          const next = prevState.next;
-          this.state.url = next;
-          var page = next.split("=");
-          // console.log("Page length: ", page.length)
-          // console.log("First Page: ", page[0]);
-          // console.log("Second Page: ", page[1]);
-          var nextValue = Number(page[page.length - 1]);
-          // console.log("Next page is: ", nextValue);
-    
-          if (next)  {
-            nextValue = Number(nextValue) + 1;
-          } else {
-            nextValue = 1;
-          }
-          
-          // console.log("Next page is: ", nextValue);
-          const nextpage = page[0] + '=' + (nextValue + 1);
-          // console.log("The next-page is: ", nextpage);
-          // console.log("Previous Page is: ", next);
-          return {
-            previous: next,
-            next: nextpage
-          };
-        }, this.getCharacters);
+    this.setState((prevState, props) => {
+        const next = prevState.next;
+        var page = next.split("=");
+        // console.log("Page length: ", page.length)
+        // console.log("First Page: ", page[0]);
+        // console.log("Second Page: ", page[1]);
+        var nextValue = Number(page[page.length - 1]);
+        // console.log("Next page is: ", nextValue);
 
-      }
+        if (next)  {
+        nextValue = Number(nextValue) + 1;
+        } else {
+        nextValue = 1;
+        }
+        
+        // console.log("Next page is: ", nextValue);
+        const nextpage = page[0] + '=' + (nextValue + 1);
+        // console.log("The next-page is: ", nextpage);
+        // console.log("Previous Page is: ", next);
+        return {
+        previous: next,
+        next: nextpage,
+        url: next
+        };
+    }, this.getCharacters);
+}
 
   prevPage = () => {
     this.setState((prevState, props) => {
       const prev = prevState.previous;
-      this.state.url = prev;
       var page = prev.split("=");
 
       var prevValue = Number(page[page.length - 1]);
@@ -135,7 +135,8 @@ class Home extends Component {
       // console.log("Previous Page is: ", prev);
       return {
         next: prev,
-        previous: prevpage
+        previous: prevpage,
+        url: prev
       };
     }, this.getCharacters);
   }
@@ -149,13 +150,13 @@ class Home extends Component {
 
 
   render() {
-      const next = <Link to="/">{this.state.next}</Link>;
-      const previous = <Link to="/">{this.state.previous}</Link>;
+    // this.getPageNo();
+    //   const next = <Link to="/">{this.state.next}</Link>;
+    //   const previous = <Link to="/">{this.state.previous}</Link>;
       const people = this.state.characters.map((character, key) => 
             <div key={key} className="grid-col-2">
                 <Link to={`/CharacterDetail/${this.getId(character.url)}/`}>
                   <div className="content">
-                    {/* <img src={CharacterImage} className="App-logo" alt="logo" /> */}
                     <img src={CharacterImage} className="sw-character"  alt="star wars character" />
                     <p key={key}>{character.name}</p>
                   </div>
