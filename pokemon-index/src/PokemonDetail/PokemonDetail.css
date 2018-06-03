@@ -1,0 +1,78 @@
+._PokemonDetail {
+    font-size: 15px;
+    font-family: Monaco;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CardContainer {
+    border: 1px solid black;
+    width: 350px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 56px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    box-shadow: -8px 9px 16px -3px gray;
+    background: rgb(252, 252, 74);
+}
+
+.CardBackground {
+    height: 550px;
+    margin: 20px 20px 0 20px;
+    background: rgb(247, 182, 61);
+    border: solid orange;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.CardFrame {
+    font-size: 15px;
+    font-family: Monaco;
+    display: flex;
+    flex-direction: column;
+}
+
+.ImageBackground {
+    height: 140px;
+    margin: 0px 20px 20px 20px;
+    width: 260px;
+    background: url(./background.jpeg);
+    text-align: center;
+}
+
+.PokemonDetailHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: orange;
+}
+
+.PokemonDetailName {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    flex-grow: 2;
+}
+
+.PokemonTypeSprite {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.PokemonDetailHP {
+    margin-right: 3px;
+}
+
+.PokemonDetailBody {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
