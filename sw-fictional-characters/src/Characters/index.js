@@ -11,8 +11,8 @@ import {
 const About = () => <p>This is a Star Wars Characters app.</p>
 // const NoMatch = () => <p>404. Website not found.</p>
 
-class Characters extends Component {
-    render() {
+const Characters = () => {
+    // render() {
         return (
             <div>
               <div className="sw-body">
@@ -36,7 +36,7 @@ class Characters extends Component {
               </div>
             </div>
         );
-    }
+    // }
 }
 
 export default Characters;
