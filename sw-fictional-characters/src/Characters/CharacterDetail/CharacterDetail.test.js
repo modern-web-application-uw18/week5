@@ -8,15 +8,22 @@ describe('Characer-details', () => {
     it('Test to make sure component renders without crashing', () => {
         const div = document.createElement('div');
 
-        const component = (
+        // const component = (
+        //     <Router>
+        //         <div>
+        //             <Route path="/CharacterDetail/4" component={CharacterDetail} />
+        //         </div>
+        //     </Router>
+        // );
+        // ReactDOM.render(<component />, div);
+        // ReactDOM.unmountComponentAtNode(div);
+        
+        ReactDOM.render((
             <Router>
                 <div>
                     <Route path="/CharacterDetail/4" component={CharacterDetail} />
                 </div>
             </Router>
-        );
-        ReactDOM.render(<component />, div);
-
-        ReactDOM.unmountComponentAtNode(div);
+        // ), document.getElementById('root'))
     });
 });

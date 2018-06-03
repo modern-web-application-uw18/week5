@@ -12,48 +12,10 @@ const About = () => <p>This is a Star Wars Characters app.</p>
 // const NoMatch = () => <p>404. Website not found.</p>
 
 class Characters extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          people: {},
-          loading: true
-        };
-      }
-
-      
-
-    componentDidMount() {
-        fetch('https://swapi.co/api/people/')
-        // fetch('https://swapi.co/api/films/')
-          .then(response => response.json())
-          .then(data => {
-            // console.log(data)
-            this.setState((prevState, props) => {
-              return {
-                people: data,
-                // characters: data.results[0].characters,
-                loading: false
-              };
-            
-            });
-          })
-          .catch(error => {
-              console.log(error)
-              this.setState((prevState, props) => {
-                return {
-                  loading: false,
-                  error: 'Error when retrieving characters'
-                };
-              })
-            });
-      }
-
     render() {
-        
         return (
             <div>
               <div className="sw-body">
-               {/* {people} */}
                 <Router>
                     <div>
                         <nav>
