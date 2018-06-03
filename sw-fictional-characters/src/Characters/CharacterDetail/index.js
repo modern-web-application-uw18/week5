@@ -47,7 +47,7 @@ class CharacterDetail extends Component {
     }
 
     render() {
-        console.log(this.props);
+        // console.log(this.props);
         // const characterId = this.props.match.params.characterId;
         // console.log("Route ", characterId);
         const { name, height, mass, 

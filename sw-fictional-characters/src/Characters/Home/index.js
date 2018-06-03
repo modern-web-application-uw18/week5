@@ -82,17 +82,7 @@ class Home extends Component {
           })
         });
   }
-    // componentDidMount() {
-    //   this.setState((prevState, props) => {
-    //     return {
-    //       next: props.next,
-    //       previous: props.previous,
-    //       characters: props.results,
-    //       // characters: data.results[0].characters,
-    //       loading: false
-    //     };
-    //   }
-    // }
+
   nextPage = () => {
         
         this.setState((prevState, props) => {
@@ -111,10 +101,10 @@ class Home extends Component {
             nextValue = 1;
           }
           
-          console.log("Next page is: ", nextValue);
+          // console.log("Next page is: ", nextValue);
           const nextpage = page[0] + '=' + (nextValue + 1);
-          console.log("The next-page is: ", nextpage);
-          console.log("Previous Page is: ", next);
+          // console.log("The next-page is: ", nextpage);
+          // console.log("Previous Page is: ", next);
           return {
             previous: next,
             next: nextpage
@@ -132,15 +122,15 @@ class Home extends Component {
       var prevValue = Number(page[page.length - 1]);
 
       if (prev)  {
-        prevValue = Number(prev);
+        prevValue = Number(prevValue);
       } else {
-        prevValue = 0;
+        prevValue = 1;
       }
-        
-      console.log("Next page is: ", prevValue);
-      const prevpage = (prevValue > 0) ? page[0] + '=' +  (prevValue - 1) : prev;
-      console.log("The next-page is: ", prevpage);
-      console.log("Previous Page is: ", prev);
+      
+      // console.log("Next page is: ", prevValue);
+      const prevpage = (prevValue > 1) ? page[0] + '=' +  (prevValue - 1) : prev;
+      // console.log("The next-page is: ", prevpage);
+      // console.log("Previous Page is: ", prev);
       return {
         next: prev,
         previous: prevpage
@@ -157,8 +147,6 @@ class Home extends Component {
 
 
   render() {
-      // const nextpage = this.nextPage;
-      
       const next = <Link to="/">{this.state.next}</Link>;
       const previous = <Link to="/">{this.state.previous}</Link>;
       const people = this.state.characters.map((character, key) => 
@@ -173,8 +161,10 @@ class Home extends Component {
 
       return (
           <div>
-              <button onClick={this.prevPage} className="btn">Previous</button>
-              <button onClick={this.nextPage} className="btn">Next</button>
+             <div className="nav-buttons">
+              <button onClick={this.prevPage} className="btn prev-button">Previous</button>
+              <button onClick={this.nextPage} className="btn next-button">Next</button>
+             </div>
               {/* <p>Next people: {next}</p> */}
               {/* <p>Previous people: {previous}</p> */}
               {/* <Link to="/">{this.state.previous}</Link> */}
