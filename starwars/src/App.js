@@ -50,7 +50,7 @@ constructor(props){
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">a rebels mennace with API's and Routes</h1>
+          <h1 className="App-title">a rebels menace with APIs and Routes</h1>
           {/* // App Navigation */}
           <nav>
             <Link to="/people">People</Link> | <Link to="/">home</Link>
@@ -67,6 +67,7 @@ constructor(props){
               </div>;
             })}
 
+            {/* Route controll */}
           <Route path="/" />
           <Route path="/people" Component={thePeople} />
          
