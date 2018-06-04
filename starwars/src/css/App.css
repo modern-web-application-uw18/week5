@@ -11,6 +11,7 @@
   background-color: #222;
   height: 150px;
   padding: 35px 0px 40px 0px;
+  margin-bottom: 18px;
   color: white;
 }
 
@@ -37,4 +38,11 @@
 }
 h1 {
   display: block;
+}
+
+nav {
+  width: 100vw;
+  padding: 4px;
+  display: block;
+  background: #ed34ed;
 }

@@ -12,9 +12,9 @@ class Character extends Component {
     
     return(
       <div className="card-people">
-        {/* <img src={image} alt={title} /> */}
+        
         <p>
-          Hello,
+          Hello,<br />
           my name is <strong>{name}</strong>
          </p>
          <p>
