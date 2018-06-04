@@ -67,7 +67,7 @@ constructor(props){
               </div>;
             })}
 
-           <Route path="/" />
+          <Route path="/" />
           <Route path="/people" Component={thePeople} />
          
         </span>
