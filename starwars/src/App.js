@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './css/App.css';
 
-// Static JSON
+// Static JSON - no longer used
 import Character from './components/Character'
 import people from './data/people.json';
 
-// The People
+// The Films
 class theFilms extends Component {
 
   constructor(props){
