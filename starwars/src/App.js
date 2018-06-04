@@ -9,13 +9,38 @@ import Character from './components/Character'
 import people from './data/people.json';
 
 // The People
-class thePeople extends Component {
+class theFilms extends Component {
+
+  constructor(props){
+    super(props);
+      this.state = {
+        films: [],
+        loading:true
+      }
+  }
+  
+    componentDidMount() {
+      fetch('https://swapi.co/api/films/')
+      .then(response => response.json())
+      .then(json => this.setState((prevState)=> {
+        return {
+          films: json.results,
+          loading:false
+        };
+      }));
+    }
+
+    
   render(){
     return(
       <div>
-         {people.map((people, idx) => {
-          return <Character key={idx} people={people} />
-        })}
+          {/* Load films via API */}
+          {this.state.films.map(film => {
+            return <div className="card-people">
+              <h1 key={film.episode_id}>{film.title}</h1>
+              </div>;
+            })}
+
       </div>
     );
   }
@@ -28,17 +53,17 @@ class App extends Component {
 constructor(props){
   super(props);
     this.state = {
-      films: [],
+      people: [],
       loading:true
     }
 }
 
   componentDidMount() {
-    fetch('https://swapi.co/api/films/')
+    fetch('https://swapi.co/api/people/')
     .then(response => response.json())
     .then(json => this.setState((prevState)=> {
       return {
-        films: json.results,
+        people: json.results,
         loading:false
       };
     }));
@@ -53,7 +78,7 @@ constructor(props){
           <h1 className="App-title">a rebels menace with APIs and Routes</h1>
           {/* // App Navigation */}
           <nav>
-            <Link to="/people">People</Link> | <Link to="/">home</Link>
+           <Link to="/">home</Link> | <Link to="/films">Films</Link>
           </nav>
         </header>
         <span className="App-intro">
@@ -61,15 +86,15 @@ constructor(props){
            {this.state.loading ? <h1>loading...</h1> : null}
 
            {/* Load films via API */}
-           {this.state.films.map(film => {
+           {this.state.people.map(people => {
             return <div className="card-people">
-              <h1 key={film.episode_id}>{film.title}</h1>
+              <h1>{people.name}</h1>
               </div>;
             })}
 
             {/* Route controll */}
           <Route path="/" />
-          <Route path="/people" Component={thePeople} />
+          <Route path="/films" Component={theFilms} />
          
         </span>
       </div>
