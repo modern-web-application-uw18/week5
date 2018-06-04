@@ -1,77 +1,23 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import logo from './logo.svg';
 import './css/App.css';
 
-// Static JSON - no longer used
+// API Components
+import TheFilms from './components/Films';
+import ThePeople from './components/People';
+
+// Static JSON - was used for testing
 import Character from './components/Character'
 import people from './data/people.json';
 
-// The Films
-class theFilms extends Component {
-
-  constructor(props){
-    super(props);
-      this.state = {
-        films: [],
-        loading:true
-      }
-  }
-  
-    componentDidMount() {
-      fetch('https://swapi.co/api/films/')
-      .then(response => response.json())
-      .then(json => this.setState((prevState)=> {
-        return {
-          films: json.results,
-          loading:false
-        };
-      }));
-    }
-
-    
-  render(){
-    return(
-      <div>
-          {/* Load films via API */}
-          {this.state.films.map(film => {
-            return <div className="card-people">
-              <h1 key={film.episode_id}>{film.title}</h1>
-              </div>;
-            })}
-
-      </div>
-    );
-  }
-}
-
-
-// Load the Films by Default
+// Load the People by Default
 class App extends Component {
 
-constructor(props){
-  super(props);
-    this.state = {
-      people: [],
-      loading:true
-    }
-}
-
-  componentDidMount() {
-    fetch('https://swapi.co/api/people/')
-    .then(response => response.json())
-    .then(json => this.setState((prevState)=> {
-      return {
-        people: json.results,
-        loading:false
-      };
-    }));
-  }
-  
   render() {
     return (
-      <Router>
+      <BrowserRouter>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -81,24 +27,17 @@ constructor(props){
            <Link to="/">home</Link> | <Link to="/films">Films</Link>
           </nav>
         </header>
-        <span className="App-intro">
+        <div className="App-intro">
          
-           {this.state.loading ? <h1>loading...</h1> : null}
+          {/* {this.state.loading ? <h1>loading...</h1> : false} */}
 
-           {/* Load films via API */}
-           {this.state.people.map(people => {
-            return <div className="card-people">
-              <h1>{people.name}</h1>
-              </div>;
-            })}
-
-            {/* Route controll */}
-          <Route path="/" />
-          <Route path="/films" Component={theFilms} />
+          {/* Route controll */}
+          <Route exact path="/" render={ () => <ThePeople /> } />
+          <Route path="/films" render={ () => <TheFilms /> } />
          
-        </span>
+        </div>
       </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }

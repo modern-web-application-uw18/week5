@@ -24,12 +24,10 @@
 
 .App-intro {
   font-size: large;
-  display: flex;
-  flex-flow: row wrap;
-  text-align: left;
+  
 }
 
-.card-people {
+.card {
   border: 2px solid black;
   padding: 8px;
   width: 200px;
@@ -45,4 +43,11 @@ nav {
   padding: 4px;
   display: block;
   background: #ed34ed;
+}
+
+.full {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
 }
