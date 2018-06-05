@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 120px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 35px 0px 40px 0px;
+  margin-bottom: 18px;
+  color: white;
+}
+
+.App-title {
+  padding:0;
+  font-style: oblique;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.App-intro {
+  font-size: large;
+  
+}
+
+.card {
+  border: 2px solid black;
+  padding: 8px;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+h1 {
+  display: block;
+}
+
+nav {
+  width: 100vw;
+  padding: 4px;
+  display: block;
+  background: #ed34ed;
+}
+
+.full {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+}
