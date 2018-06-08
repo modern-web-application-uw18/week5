@@ -1,0 +1,143 @@
+
+.separator {
+    border: .013rem dashed lightgray;
+  }
+  
+.characters-page {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 1rem 1rem;
+    padding: 0 1rem;
+    /* background: rgb(255, 255, 150); */
+  }
+
+  .sw-navigation-bar {
+    background-color: rgb(207,166,120);
+    margin: 0;
+    /* width: 100%; */
+    padding: 1em 1rem;
+  }
+
+  
+.sw-navigation-bar li {
+    display: inline;
+  
+    font-size: 1.2rem;
+    text-shadow: 0 0 0.1rem #333;
+  }
+  
+  .sw-navigation-bar a {
+    color: #F2F2F2;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+  }
+  
+  .sw-navigation-bar a:active {
+    background-color: yellow;
+    color: white;
+  }
+  
+  /* change the color of link on hover*/
+  .sw-navigation-bar a:hover {
+    background-color: #DDD;
+    color: black;
+    border-radius: 3%;
+  }
+
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* telling css that columns shouldn't flex, but auto cells should */
+  .grid > [class^="grid-"] { flex: none; }
+  .grid > .grid-cell { flex: 1; }
+  
+  /* relative widths for each column size */
+  .grid-col-1  { width: 8.3333%; }
+  .grid-col-2  { width: 16.6667%; }
+  .grid-col-3  { width: 25%; }
+  .grid-col-4  { width: 33.3333%; }
+  .grid-col-5  { width: 41.6667%; }
+  .grid-col-6  { width: 50%; }
+  .grid-col-7  { width: 58.3333%; }
+  .grid-col-8  { width: 66.6667%; }
+  .grid-col-9  { width: 75%; }
+  .grid-col-10 { width: 83.3333%; }
+  .grid-col-11 { width: 91.6667%; }
+  
+  /* Adding gutters to the grid */
+  .grid-guttered > [class^="grid-"] {
+    padding: 1rem 1rem 0 0;
+  }
+  
+  .grid-guttered > [class^="grid-"]:last-child {
+    padding-right: 0;
+  }
+
+
+  .content {
+    background: #eee;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    width: 10rem;
+  }
+  
+  
+.sw-body {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgb(211, 222, 228);
+  }
+
+  
+  .image-box {
+    width: 100%;
+    height: 50vmin;
+    border-radius: .2rem;
+  }
+  
+.nav-buttons {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: .5rem 2rem;
+  padding: 0 1rem;
+  height: 2rem;
+}
+
+
+
+.prev-button {
+  position: absolute;
+  left: 1rem;
+}
+
+.next-button {
+  position: absolute;
+  right: 1rem;
+}
+  
+.btn {
+    height: 2rem;
+    width: 4rem;
+    font-size: 80%;
+    color: black;
+  
+    border-radius: .3rem;
+    background: moccasin;
+  }
+
+.sw-character {
+    height: 6rem;
+}
