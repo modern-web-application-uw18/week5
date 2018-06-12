@@ -1,0 +1,79 @@
+.CharacterPage {
+  text-align: center;
+  color: white;
+  background-color: black;
+  align-items: center;
+  padding: 40px;
+  font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+}
+
+.App-title {
+  font-size: 1.5em;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+button {
+  border-top: 1px solid #336787;
+  background: #043029;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ebdde4), to(#043029));
+  background: -webkit-linear-gradient(top, #ebdde4, #043029);
+  background: -moz-linear-gradient(top, #ebdde4, #043029);
+  background: -ms-linear-gradient(top, #ebdde4, #043029);
+  background: -o-linear-gradient(top, #ebdde4, #043029);
+  padding: 5.5px 11px;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  border-radius: 36px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+  }
+
+button:hover {
+  border-top-color: #304959;
+  background: #304959;
+  color: #cccccc;
+  }
+button:active {
+  border-top-color: #6ca6cc;
+  background: #6ca6cc;
+  }
+
+/* unvisited link */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: grey;
+  text-decoration: none;
+}
+
+
+/* mouse over link */
+a:hover {
+  color: rgb(55, 74, 95);
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: rgb(135, 183, 238);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background: black;
+}
