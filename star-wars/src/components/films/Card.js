@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Card extends Component {
 
@@ -10,11 +11,16 @@ class Card extends Component {
       day: 'numeric'
     };
 
+    const url = `films/${this.props.data.url.split('/')[5]}`;
+
     return (
-      <div key={this.props.index} className='loop'>
+      <div>
         <p>
-          Movie Title: {this.props.data.title}
+          ID: {this.props.data.episode_id} | {this.props.data.title}
         </p>
+
+        <p><Link to={url}>{this.props.data.title}</Link></p>
+
         <p>
           Release Date: {new Date(this.props.data.release_date).toLocaleString('en-us', standardOptions)}
         </p>

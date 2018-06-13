@@ -1,45 +1,35 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import 'reset-css';
+import './App.css';
 import Spinner from './components/widgets/spinner/Spinner';
-import Card from './components/card/Card';
+import Films from './components/films/Films';
+import FilmDetail from './components/films/FilmDetail';
+import NoMatch from './components/noMatch/NoMatch';
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: [], loading: true
-    };
-  }
-
-  componentDidMount() {
-    fetch('https://swapi.co/api/films/')
-    .then(response => response.json())
-    .then(data => {
-      this.setState((prevState, props) => {
-        return { data: data.results, loading: false };
-      });
-    })
-    .then(() => console.log(this.state.data))
-    .catch(error => console.log(error))
-    .finally(() => console.log('always winning'));
-  }
-
   render() {
     return (
-      <div className='parent'>
+      <Router>
+        <section>
 
-        {this.state.loading &&
-          <Spinner />
-        }
+          <header>
+            <p><Link to="/">Home</Link></p>
+            <p><Link to="/films">Films</Link></p>
+            <p><Link to="/404">404</Link></p>
+          </header>
 
-        {this.state.data.map (
-          (data, index) =>
-            <Card data={data} index={index}/>
-          )
-        }
-      </div>
-    );
+          <Switch>
+            <Route exact path='/' component={Spinner}/>
+            <Route exact path='/films' component={Films}/>
+            <Route exact path='/films/:filmId' component={FilmDetail} />
+            <Route component={NoMatch}/>
+          </Switch>
+
+        </section>
+      </Router>
+    )
   }
 }
 
