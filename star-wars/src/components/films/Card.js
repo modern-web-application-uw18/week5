@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 class Card extends Component {
@@ -28,5 +29,13 @@ class Card extends Component {
     );
   }
 }
+
+Card.propTypes = {
+  data: PropTypes.shape({
+      episode_id: PropTypes.number,
+      release_date: PropTypes.string,
+      title: PropTypes.string
+  })
+};
 
 export default Card;

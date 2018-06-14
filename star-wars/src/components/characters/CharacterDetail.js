@@ -2,25 +2,29 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Spinner from '../widgets/spinner/Spinner';
 
-class FilmDetail extends Component {
+class CharacterDetail extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: {}, loading: true
+      data: [], loading: true
     };
   }
 
   componentDidMount() {
-    const filmId = this.props.match.params.filmId;
+    const characterId = this.props.match.params.characterId;
 
-    fetch(`https://swapi.co/api/films/${filmId}`)
+    fetch(`https://swapi.co/api/people/${characterId}`)
     .then(response => response.json())
     .then(data => {
       this.setState((prevState, props) => {
-        return { data: data, loading: false };
+        return {
+          data: data,
+          loading: false
+        };
       });
     })
-    .catch(error => console.log(error))
+    .then(() => console.log(this.state.data))
+    .catch(error => console.log(error));
   }
 
   render() {
@@ -29,18 +33,16 @@ class FilmDetail extends Component {
         {this.state.loading &&
           <Spinner />
         }
-        <p>{this.state.data.title}</p>
-        <p>{this.state.data.opening_crawl}</p>
+        {this.state.data.name}
       </div>
     );
   }
 }
 
-FilmDetail.propTypes = {
+CharacterDetail.propTypes = {
   data: PropTypes.shape({
-      title: PropTypes.string,
-      opening_crawl: PropTypes.string
+      name: PropTypes.string
   })
 };
 
-export default FilmDetail
+export default CharacterDetail
