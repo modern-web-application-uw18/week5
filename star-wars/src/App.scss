@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Righteous');
+
+.body-container {
+  margin: 40px 10px;
+}
+
 p {
   margin-bottom: 1em;
+}
+
+a {
+  color: #0070ba;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

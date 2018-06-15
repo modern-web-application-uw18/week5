@@ -1,0 +1,26 @@
+.character-detail {
+  margin-top: 40px;
+}
+
+.character-detail__header {
+  font-size: 1.3em;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 50px;
+}
+
+.character-detail__details {
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
+}
+
+.character-detail__data {
+  margin-left: 20px;
+}
+
+.character-detail__spec {
+  position: relative;
+  font-weight: bold;
+  margin-bottom: 1em;
+}

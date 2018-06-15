@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import './Spinner.css'
 
 class Spinner extends Component {
 
   render() {
     return (
-      <p>LOADING ...</p>
+      <div className='loader'>LOADING ...</div>
     );
   }
 }

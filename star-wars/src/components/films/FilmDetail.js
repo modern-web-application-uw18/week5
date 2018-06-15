@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Spinner from '../widgets/spinner/Spinner';
+import './FilmDetail.css';
 
 class FilmDetail extends Component {
   constructor(props) {
@@ -29,8 +30,16 @@ class FilmDetail extends Component {
         {this.state.loading &&
           <Spinner />
         }
-        <p>{this.state.data.title}</p>
-        <p>{this.state.data.opening_crawl}</p>
+
+        {!this.state.loading &&
+          <article>
+            <h1 className='film-detail__header'>
+              {this.state.data.title}
+            </h1>
+
+            <p className='film-detail__crawl'>{this.state.data.opening_crawl}</p>
+          </article>
+        }
       </div>
     );
   }

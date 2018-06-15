@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Spinner from '../widgets/spinner/Spinner';
+import Button from '../widgets/button/Button';
 import Card from './Card';
+import './Characters.css';
 
 class Characters extends Component {
 
@@ -54,19 +56,21 @@ class Characters extends Component {
           <Spinner />
         }
 
-        {this.state.data.map (
+        {!this.state.loading && this.state.data.map (
           (data, index) =>
             <Card data={data} key={index} paging={this.state.paging}/>
           )
         }
 
-         { this.state.paging > 1 &&
-           <button onClick={this.previousCharacterResult}>Previous Characters</button>
-         }
+        <div className='paging-actions'>
+          {!this.state.loading && this.state.paging > 1 &&
+           <Button styles='' onClick={this.previousCharacterResult} text='Previous Characters' />
+          }
 
-         { this.state.paging < 9 &&
-           <button onClick={this.nextCharacterResult}>Next Characters</button>
-         }
+          {!this.state.loading && this.state.paging < 9 &&
+           <Button styles='' onClick={this.nextCharacterResult} text='Next Characters' />
+          }
+        </div>
 
       </div>
     );
