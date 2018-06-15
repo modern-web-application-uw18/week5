@@ -1,0 +1,12 @@
+body {
+    background-image: url("star-wars-background.jpg");
+}
+
+.App {
+    text-align: center;
+}
+
+.App img {
+    width: 300px;
+}
+    
