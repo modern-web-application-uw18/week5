@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './star-wars/Home';
 import Person from './star-wars/Person';
-import Film from './star-wars/Film';
-import Planet from './star-wars/Planet';
-import Species from './star-wars/Species';
 import './App.css';
 import logo from './img/star-wars-logo.png';
 
@@ -36,9 +33,6 @@ class App extends Component {
             <Route exact path="/people/" component={Home}></Route>
             <Route exact path="/people/?page=number" component={Home}></Route>
             <Route path="/people/:personId" component={Person}></Route>
-            <Route path="/films/:filmId" component={Film}></Route>
-            <Route path="/planets/:planetId" component={Planet}></Route>
-            <Route path="/species/:speciesId" component={Species}></Route>
             <Route component={NoMatch} />
           </Switch>
         </Router>

@@ -9,7 +9,8 @@
     height: 240px;
     justify-content: center;
     text-align: center;
-    margin: auto;}
+    margin: auto;
+}
 
 .Person-image-container {
     width: 240px;
@@ -30,6 +31,26 @@
     height: 240px;
     margin: 40px;
     text-align: left;
+}
+
+.Person-button-container {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.Person-Green-button {
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
 }
 
 .Person-movie-list {

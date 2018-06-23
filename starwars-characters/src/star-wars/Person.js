@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-// import Film from './Film';
-// import Planet from './Planet';
-// import Species from './Species';
 import './Person.css';
+import './Home.css';
 import starwarsimages from '../json/starwars-characters.json';
 
 class Person extends Component {
@@ -27,6 +25,7 @@ class Person extends Component {
     
     componentDidMount() {
         const url = `https://swapi.co/api/people/${this.props.match.params.personId}`;
+        console.log(this.props);
         fetch(url)
             .then(response => response.json())
             .then(json => this.setState((prevState) => {
@@ -43,9 +42,6 @@ class Person extends Component {
                     };
                 })
             });
-        this.forceUpdate();
-        // const hurl = this.state.person.homeworld;
-        // console.log(hurl);
     }
 
     render() {
@@ -59,16 +55,7 @@ class Person extends Component {
             eye_color,
             birth_year,
             gender
-            // homeworld,
-            // films,
-            // species
         } = this.state.person;
-
-      
-        // const url = this.state.person.homeworld;
-        // console.log(url);
-        //const name = this.state.person.name;
-        //console.log(name);
 
         return (
             <div className="Person">
@@ -80,8 +67,6 @@ class Person extends Component {
                         <img src={this.getImage(name)} alt="" />
                     </div>
                     <div className="Person-stats">
-                        {/* <Species species={this.state.person.species}></Species> */}
-                        {/* <Planet url={this.state.person.homeworld}/> */}
                         <div><strong>Gender: </strong>{gender}</div>
                         <div><strong>Birth Year: </strong>{birth_year}</div>
                         <div><strong>Height: </strong>{height} cm</div>
@@ -89,13 +74,14 @@ class Person extends Component {
                         <div><strong>Hair Color: </strong>{hair_color}</div>
                         <div><strong>Skin Color: </strong>{skin_color}</div>
                         <div><strong>Eye Color: </strong>{eye_color}</div>
+                        <br></br>
                     </div>
                 </div>
+                <div className = "Person-button-container">
+                    <button onClick={this.props.history.goBack}
+                                className="Person-Green-button">Back</button>
                 </div>
-//                <div className="Person-movie-list">
-//                    {this.state.films.map((film, index) => {
-//                        return <Film key={index} film={film} />;
-//                    })}
+            </div>
         );
     }
 }
